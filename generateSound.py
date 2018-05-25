@@ -74,11 +74,13 @@ def func1(time):
 def func2(time):
     return 0.5*math.sin(time) + 0.1*math.cos(time)
 
-wave1 = generateSinFreqDuration(0,1000,1)
-wave2 = generateWaveFormCustom(func1,1000,1)
-wave3 = generateSinFreqDuration(0,1000,1)
-wave4 = generateWaveFormCustom(func2,1000,1)
-wave5 = generateSinFreqDuration(0,1000,1)
+freq = 5000
+
+wave1 = generateSinFreqDuration(0,freq,1)
+wave2 = generateWaveFormCustom(func1,freq,1)
+wave3 = generateSinFreqDuration(0,freq,1)
+wave4 = generateWaveFormCustom(func2,freq,1)
+wave5 = generateSinFreqDuration(0,freq,1)
 
 waveFinal = wave1 + wave2 + wave3 + wave4 + wave5
 print(wave1)

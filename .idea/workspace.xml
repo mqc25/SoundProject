@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10ba16c0-6c6b-4305-90ed-e8a318c3d26b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generateSound.py" beforeDir="false" afterPath="$PROJECT_DIR$/generateSound.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +16,7 @@
       <file leaf-file-name="generateSound.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generateSound.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="234">
               <caret line="88" column="15" lean-forward="true" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="15" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -153,7 +150,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/generateSound.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="234">
           <caret line="88" column="15" lean-forward="true" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="15" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
