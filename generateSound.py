@@ -88,6 +88,19 @@ def func3(time):
 def func4(time):
     return 0.5*math.sin(2*math.pi*2000*time) + 0.5*math.sin(2*math.pi*1000*time)
 
+def func5(time):
+    sum = 0
+    for i in range(1, 11):
+        sum += 0.1 * math.sin(2 * math.pi * 1000*i * time)
+    return sum
+
+def func6(time):
+    sum = 0
+    for i in range(1, 11):
+        sum += 0.1 * math.sin(2 * math.pi * (2000 + 100*i) * time)
+    return sum
+
+
 freq = 5000
 
 # wave1 = generateSinFreqDuration(0,freq,1)
@@ -109,8 +122,8 @@ waveNull = generateSinFreqDuration(0,3000,1)
 #
 # wave30 = generateSinFreqDuration(1,2000,1)
 
-wave10 = generateCustom(func3,1)
-wave20 = generateCustom(func4,1)
+wave10 = generateCustom(func5,1)
+wave20 = generateCustom(func6,1)
 
 waveFinal = waveNull + wave10 + waveNull + wave20 + waveNull
 createWaveFormFile('custom.wav',waveFinal)
