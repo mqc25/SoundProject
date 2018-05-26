@@ -111,7 +111,7 @@ def chirp2(time):
     return math.sin(2*math.pi*(6000*time + 2000*time*time))
 
 def chirp3(time):
-    return math.sin(2*math.pi*(2000*time + 2000*time*time))
+    return math.sin(2*math.pi*(10000*time + 2000*time*time))
 
 def chirp4(time):
     return math.sin(2*math.pi*(8000*time + 2000*time*time))
