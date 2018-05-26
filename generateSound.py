@@ -127,7 +127,13 @@ wave10 = generateCustom(func5,1)
 #wave10 = generateSinFreqDuration(1,3500,1)
 #wave20 = generateSinFreqDuration(1,4000,1)
 
-waveFinal = waveNull + wave10 + waveNull #+ wave20 + waveNull
+wave1 = []
+for i in range(20):
+    wave1 += generateSinFreqDuration(1,1000*(i+1),0.5)
+
+
+#waveFinal = waveNull + wave10 + waveNull #+ wave20 + waveNull
+waveFinal = wave1
 createWaveFormFile('custom.wav',waveFinal)
 #plotSignal('custom.wav')
 #plt.show()

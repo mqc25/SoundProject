@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="10ba16c0-6c6b-4305-90ed-e8a318c3d26b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/fft.py" beforeDir="false" afterPath="$PROJECT_DIR$/fft.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generateSound.py" beforeDir="false" afterPath="$PROJECT_DIR$/generateSound.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="generateSound.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="generateSound.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generateSound.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="134" column="1" lean-forward="true" selection-start-line="134" selection-start-column="1" selection-end-line="134" selection-end-column="1" />
+            <state relative-caret-position="98">
+              <caret line="91" column="11" lean-forward="true" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -26,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fft.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fft.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fft.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+            <state relative-caret-position="102">
+              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
               <folding>
                 <element signature="e#1#38#0" expanded="true" />
               </folding>
@@ -54,8 +53,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/fft.py" />
         <option value="$PROJECT_DIR$/generateSound.py" />
+        <option value="$PROJECT_DIR$/fft.py" />
       </list>
     </option>
   </component>
@@ -189,22 +188,22 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fft.py">
+    <entry file="file://$PROJECT_DIR$/generateSound.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="98">
+          <caret line="91" column="11" lean-forward="true" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
           <folding>
-            <element signature="e#1#38#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generateSound.py">
+    <entry file="file://$PROJECT_DIR$/fft.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="134" column="1" lean-forward="true" selection-start-line="134" selection-start-column="1" selection-end-line="134" selection-end-column="1" />
+        <state relative-caret-position="102">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#1#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
