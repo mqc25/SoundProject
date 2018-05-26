@@ -105,10 +105,10 @@ def func7(time):
     return np.sinc(5000*time) - np.sinc(4000*time)
 
 def chirp1(time):
-    return math.sin(2*math.pi*(5000*time + 400*time*time))
+    return math.sin(2*math.pi*(4000*time + 400*time*time))
 
 def chirp2(time):
-    return math.sin(2*math.pi*(7000*time + 400*time*time))
+    return math.sin(2*math.pi*(6000*time + 400*time*time))
 
 def chirp3(time):
     return math.sin(2*math.pi*(3000*time + 400*time*time))
@@ -142,10 +142,10 @@ waveNull = generateSinFreqDuration(0,3000,1)
 #wave10 = generateSinFreqDuration(1,3500,1)
 #wave20 = generateSinFreqDuration(1,4000,1)
 
-
-
-#waveFinal = waveNull + wave10 + waveNull #+ wave20 + waveNull
-waveFinal = generateCustom(chirp1,1) + generateCustom(chirp2,1) + generateCustom(chirp3,1) + generateCustom(chirp4,1)
+nullWave = generateSinFreqDuration(0,1000,0.5)
+wave1 = generateCustom(chirp1,0.5)
+wave2 = generateCustom(chirp2,0.5)
+waveFinal = nullWave + wave2 + nullWave + wave1 + nullWave + wave1 + nullWave + wave2 + nullWave
 createWaveFormFile('custom.wav',waveFinal)
 #plotSignal('custom.wav')
 #plt.show()
