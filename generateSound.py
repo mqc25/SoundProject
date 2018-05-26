@@ -142,10 +142,11 @@ waveNull = generateSinFreqDuration(0,3000,1)
 #wave10 = generateSinFreqDuration(1,3500,1)
 #wave20 = generateSinFreqDuration(1,4000,1)
 
-nullWave = generateSinFreqDuration(0,1000,0.5)
-wave1 = generateCustom(chirp1,0.5)
-wave2 = generateCustom(chirp2,0.5)
+nullWave = generateSinFreqDuration(0,1000,0.2)
+wave1 = generateCustom(chirp1,0.2)
+wave2 = generateCustom(chirp2,0.2)
 waveFinal = nullWave + wave2 + nullWave + wave1 + nullWave + wave1 + nullWave + wave2 + nullWave
+waveFinal += wave2 + nullWave + wave1 + nullWave + wave1 + nullWave + wave2 + nullWave
 createWaveFormFile('custom.wav',waveFinal)
 #plotSignal('custom.wav')
 #plt.show()
