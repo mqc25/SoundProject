@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10ba16c0-6c6b-4305-90ed-e8a318c3d26b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fft.py" beforeDir="false" afterPath="$PROJECT_DIR$/fft.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom.wav" beforeDir="false" afterPath="$PROJECT_DIR$/custom.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generateSound.py" beforeDir="false" afterPath="$PROJECT_DIR$/generateSound.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +17,8 @@
       <file leaf-file-name="generateSound.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generateSound.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="183">
+              <caret line="127" column="42" lean-forward="true" selection-start-line="127" selection-start-column="42" selection-end-line="127" selection-end-column="42" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -191,8 +191,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/generateSound.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="183">
+          <caret line="127" column="42" lean-forward="true" selection-start-line="127" selection-start-column="42" selection-end-line="127" selection-end-column="42" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
