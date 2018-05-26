@@ -105,16 +105,16 @@ def func7(time):
     return np.sinc(5000*time) - np.sinc(4000*time)
 
 def chirp1(time):
-    return math.sin(2*math.pi*(4000*time + 1000*time*time))
+    return math.sin(2*math.pi*(4000*time + 2000*time*time))
 
 def chirp2(time):
-    return math.sin(2*math.pi*(6000*time + 1000*time*time))
+    return math.sin(2*math.pi*(6000*time + 2000*time*time))
 
 def chirp3(time):
-    return math.sin(2*math.pi*(2000*time + 1000*time*time))
+    return math.sin(2*math.pi*(2000*time + 2000*time*time))
 
 def chirp4(time):
-    return math.sin(2*math.pi*(8000*time + 1000*time*time))
+    return math.sin(2*math.pi*(8000*time + 2000*time*time))
 
 
 freq = 5000
