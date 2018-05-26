@@ -105,16 +105,29 @@ def func7(time):
     return np.sinc(5000*time) - np.sinc(4000*time)
 
 def chirp1(time):
-    return math.sin(2*math.pi*(4000*time + 2000*time*time))
+    return math.sin(2*math.pi*(4000*time + 1000*time*time))
 
 def chirp2(time):
-    return math.sin(2*math.pi*(6000*time + 2000*time*time))
+    return math.sin(2*math.pi*(5000*time + 1000*time*time))
 
 def chirp3(time):
-    return math.sin(2*math.pi*(10000*time + 2000*time*time))
+    return math.sin(2*math.pi*(6000*time + 1000*time*time))
 
 def chirp4(time):
-    return math.sin(2*math.pi*(8000*time + 2000*time*time))
+    return math.sin(2*math.pi*(7000*time + 1000*time*time))
+
+def chirp5(time):
+    return math.sin(2*math.pi*(8000*time + 1000*time*time))
+
+def chirp6(time):
+    return math.sin(2*math.pi*(9000*time + 1000*time*time))
+
+def chirp7(time):
+    return math.sin(2*math.pi*(10000*time + 1000*time*time))
+
+def chirp8(time):
+    return math.sin(2*math.pi*(11000*time + 1000*time*time))
+
 
 
 freq = 5000
@@ -147,8 +160,13 @@ wave1 = generateCustom(chirp1,0.2)
 wave2 = generateCustom(chirp2,0.2)
 wave3 = generateCustom(chirp3,0.2)
 wave4 = generateCustom(chirp4,0.2)
+wave5 = generateCustom(chirp5,0.2)
+wave6 = generateCustom(chirp6,0.2)
+wave7 = generateCustom(chirp7,0.2)
+wave8 = generateCustom(chirp8,0.2)
 
-wave3 = [int((x+y+z+a)/4) for x,y,z,a in zip(wave1,wave2,wave3,wave4)]
+
+wave3 = [int((x+y+z+a+b+c+d+e)/8) for x,y,z,a,b,c,d,e in zip(wave1,wave2,wave3,wave4,wave5,wave6,wave7,wave8)]
 waveFinal = nullWave + wave2 + nullWave + wave1 + nullWave + wave1 + nullWave + wave2 + nullWave
 waveFinal += wave2 + nullWave + wave1 + nullWave + wave1 + nullWave + wave2 + nullWave
 waveFinal = nullWave + wave3 + nullWave
