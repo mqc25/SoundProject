@@ -91,7 +91,7 @@ def func4(time):
 def func5(time):
     sum = 0
     for i in range(1, 11):
-        sum += 0.1 * math.sin(2 * math.pi * 1000*i * time)
+        sum += 0.1 * math.sin(2 * math.pi * 500*i * time)
     return sum
 
 def func6(time):
@@ -125,7 +125,7 @@ waveNull = generateSinFreqDuration(0,3000,1)
 wave10 = generateCustom(func5,1)
 wave20 = generateCustom(func6,1)
 
-waveFinal = waveNull + wave10 + waveNull + wave20 + waveNull
+waveFinal = waveNull + wave10 + waveNull #+ wave20 + waveNull
 createWaveFormFile('custom.wav',waveFinal)
 #plotSignal('custom.wav')
 #plt.show()
