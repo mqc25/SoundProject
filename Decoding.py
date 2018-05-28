@@ -3,7 +3,6 @@ import numpy as np
 from fft import *
 import matplotlib.pyplot as plt
 
-THRESH_HOLD = 1e6
 
 def getStartEndIndex(freq_list, freq_fft, bandwidth):
     countStart = 0
@@ -45,80 +44,118 @@ freq = np.arange(2500,13000,250)
 
 
 
+testSound = 'test10.wav'
 
-time_chunk, freq_oneside_chunk, FFT_side_chunk = performFFTinChunk('test8.wav',0.04)
-freq = [7000]
-result_chunk = []
+def findFirstIndex(waveFileName):
+    time_chunk, freq_oneside_chunk, FFT_side_chunk = performFFTinChunk(waveFileName, 0.04)
+    freq = [7000]
+    result_chunk = []
 
-time_start = []
+    time_start = []
 
-start_index = None
+    start_index = None
+    done = False
+    for i in range(len(freq_oneside_chunk)):
+        indexStart, indexEnd = getStartEndIndex(freq, freq_oneside_chunk[i], 500)
+        resultTemp = getIntegral(indexStart, indexEnd, FFT_side_chunk[i])
+        result_chunk.append(resultTemp)
+        time_start.append(time_chunk[i][0])
 
-for i in range(len(freq_oneside_chunk)):
-    indexStart,indexEnd = getStartEndIndex(freq,freq_oneside_chunk[i],500)
-    resultTemp = getIntegral(indexStart,indexEnd,FFT_side_chunk[i])
-    result_chunk.append(resultTemp)
-    time_start.append(time_chunk[i][0])
-    if resultTemp[0] > THRESH_HOLD:
-        start_index = i
-        break
+    plt.plot(time_start, result_chunk)
+    plt.show()
 
-print("start_index",start_index)
-
-time_start1 = time_chunk[start_index+2][0]
-time_end1 = time_chunk[start_index+5][-1]
-
-time_start2 = time_chunk[start_index+6][0]
-time_end2 = time_chunk[start_index+9][-1]
-
-print("time_start1",time_start1)
-print("time_start2",time_start2)
-
-print("time_end1",time_end1)
-print("time_end2",time_end2)
+    return result_chunk.index(max(result_chunk)), time_chunk
 
 
 
-fs_rate, signal, l_audio, N, secs, Ts = readWaveFile('test8.wav')
 
-# t = scipy.arange(0, secs, Ts)  # time vector as scipy arange field / numpy.ndarray
-t = np.linspace(0, secs, signal.size)
+def getPackage(waveFileName,start_i, numPackage, time):
+    time_start = []
+    time_end = []
+    for i in range(numPackage):
+        time_start.append(time[start_i+2 + 4*i][0])
+        time_end.append(time[start_i + 5 + 4*i][-1])
 
-start_index1 = np.nonzero(t == time_start1)[0][0]
-end_index1 = np.nonzero(t == time_end1)[0][0]
-n = end_index1 - start_index1 + 1
-FFT1 = abs(scipy.fft(signal[start_index1:end_index1]))
-FFT_side1 = FFT1[range(int(n/ 2))]
-freqs1 = scipy.fftpack.fftfreq(n, t[start_index1+1] - t[start_index1])
-fft_freqs1 = np.array(freqs1)
-freqs_side1 = freqs1[range(int(n / 2))]  # one side frequency range
+    fs_rate, signal, l_audio, N, secs, Ts = readWaveFile(waveFileName)
+    t = np.linspace(0, secs, signal.size)
 
+    freq = np.arange(2500, 6500, 500)
 
-start_index2 = np.nonzero(t == time_start2)[0][0]
-end_index2 = np.nonzero(t == time_end2)[0][0]
-n = end_index2 - start_index2 + 1
-FFT2 = abs(scipy.fft(signal[start_index2:end_index2]))
-FFT_side2 = FFT2[range(int(n/ 2))]
-freqs2 = scipy.fftpack.fftfreq(n, t[start_index1+1] - t[start_index1])
-fft_freqs2 = np.array(freqs2)
-freqs_side2 = freqs2[range(int(n / 2))]  # one side frequency range
+    for i in range(numPackage):
+        start = np.nonzero(t == time_start[i])[0][0]
+        end = np.nonzero(t == time_end[i])[0][0]
+        n = end - start + 1
+        FFT = abs(scipy.fft(signal[start:end]))
+        FFT_side = FFT[range(int(n / 2))]
+        freqs = scipy.fftpack.fftfreq(n, t[start + 1] - t[start])
+        fft_freqs = np.array(freqs)
+        freqs_side = freqs[range(int(n / 2))]  # one side frequency range
 
-freq = np.arange(2500,6500,500)
+        indexStart, indexEnd = getStartEndIndex(freq, freqs_side, 500)
+        result = getIntegral(indexStart, indexEnd, FFT_side)
 
+        plt.plot(freq, result)
+        plt.show()
 
+start_index, time = findFirstIndex(testSound)
+getPackage(testSound,start_index,6,time)
 
-indexStart, indexEnd = getStartEndIndex(freq, freqs_side1, 500)
-result1 = getIntegral(indexStart,indexEnd,FFT_side1)
+# print("start_index",start_index)
+#
+# time_start1 = time_chunk[start_index+2][0]
+# time_end1 = time_chunk[start_index+5][-1]
+#
+# time_start2 = time_chunk[start_index+6][0]
+# time_end2 = time_chunk[start_index+9][-1]
+#
+# print("time_start1",time_start1)
+# print("time_start2",time_start2)
+#
+# print("time_end1",time_end1)
+# print("time_end2",time_end2)
 
-indexStart, indexEnd = getStartEndIndex(freq, freqs_side2, 500)
-result2 = getIntegral(indexStart,indexEnd,FFT_side2)
-
-# print(start_index)
-# # # plt.plot(time_start,result_chunk)
-# # # plt.show()
-
-plt.plot(freq,result1)
-plt.show()
-plt.plot(freq,result2)
-plt.show()
+#
+#
+# fs_rate, signal, l_audio, N, secs, Ts = readWaveFile(testSound)
+#
+# # t = scipy.arange(0, secs, Ts)  # time vector as scipy arange field / numpy.ndarray
+# t = np.linspace(0, secs, signal.size)
+#
+# start_index1 = np.nonzero(t == time_start1)[0][0]
+# end_index1 = np.nonzero(t == time_end1)[0][0]
+# n = end_index1 - start_index1 + 1
+# FFT1 = abs(scipy.fft(signal[start_index1:end_index1]))
+# FFT_side1 = FFT1[range(int(n/ 2))]
+# freqs1 = scipy.fftpack.fftfreq(n, t[start_index1+1] - t[start_index1])
+# fft_freqs1 = np.array(freqs1)
+# freqs_side1 = freqs1[range(int(n / 2))]  # one side frequency range
+#
+#
+# start_index2 = np.nonzero(t == time_start2)[0][0]
+# end_index2 = np.nonzero(t == time_end2)[0][0]
+# n = end_index2 - start_index2 + 1
+# FFT2 = abs(scipy.fft(signal[start_index2:end_index2]))
+# FFT_side2 = FFT2[range(int(n/ 2))]
+# freqs2 = scipy.fftpack.fftfreq(n, t[start_index1+1] - t[start_index1])
+# fft_freqs2 = np.array(freqs2)
+# freqs_side2 = freqs2[range(int(n / 2))]  # one side frequency range
+#
+# freq = np.arange(2500,6500,500)
+#
+#
+#
+# indexStart, indexEnd = getStartEndIndex(freq, freqs_side1, 500)
+# result1 = getIntegral(indexStart,indexEnd,FFT_side1)
+#
+# indexStart, indexEnd = getStartEndIndex(freq, freqs_side2, 500)
+# result2 = getIntegral(indexStart,indexEnd,FFT_side2)
+#
+# # print(start_index)
+# # # # plt.plot(time_start,result_chunk)
+# # # # plt.show()
+#
+# plt.plot(freq,result1)
+# plt.show()
+# plt.plot(freq,result2)
+# plt.show()
 

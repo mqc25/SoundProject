@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="10ba16c0-6c6b-4305-90ed-e8a318c3d26b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Decoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decoding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Encoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/Encoding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom.wav" beforeDir="false" afterPath="$PROJECT_DIR$/custom.wav" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fft.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fft.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fft.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="103" column="28" lean-forward="true" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+            <state relative-caret-position="173">
+              <caret line="107" column="33" lean-forward="true" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -37,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Decoding.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Decoding.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Decoding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+            <state relative-caret-position="132">
+              <caret line="87" column="33" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -52,8 +54,8 @@
       <file leaf-file-name="Encoding.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Encoding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="251">
+              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -86,8 +88,8 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/generateSound.py" />
         <option value="$PROJECT_DIR$/fft.py" />
-        <option value="$PROJECT_DIR$/Encoding.py" />
         <option value="$PROJECT_DIR$/Decoding.py" />
+        <option value="$PROJECT_DIR$/Encoding.py" />
       </list>
     </option>
   </component>
@@ -346,10 +348,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Decoding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="87" column="33" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Encoding.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="251">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
@@ -358,20 +370,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fft.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="103" column="28" lean-forward="true" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+        <state relative-caret-position="173">
+          <caret line="107" column="33" lean-forward="true" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Decoding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
