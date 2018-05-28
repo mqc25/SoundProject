@@ -98,7 +98,7 @@ wave3 = generateCustomChirp(chirp_linear, 10000, 0.08, 500)
 
 #waveFinal = nullWave + wave1 + nullWave + wave2 + nullWave + wave3 + nullWave
 #freq = [2000,3000,-1,4000,-1,6000,-1, 8000,9000, 10000,11000, 12000]
-freq = np.arange(2000,12500,500)
+freq = np.arange(2000,13000,1000)
 waveFinal = generateSoundCombination(chirp_linear,freq,0.08,500)
 createWaveFormFile('custom.wav', waveFinal)
 # plotSignal('custom.wav')
