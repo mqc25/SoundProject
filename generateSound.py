@@ -103,6 +103,6 @@ wave3 = generateCustomChirp(chirp_linear, 10000, 0.08, 500)
 # plt.show()
 
 #freq = np.arange(2000,13000,1000)
-freq = [7000]
-waveFinal = generateSoundCombination(chirp_linear,freq,0.04,500)
-createWaveFormFile('custom.wav', waveFinal)
+# freq = [7000]
+# waveFinal = generateSoundCombination(chirp_linear,freq,0.04,500)
+# createWaveFormFile('custom.wav', waveFinal)

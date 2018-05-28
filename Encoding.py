@@ -10,17 +10,19 @@ def bitfield(n):
 def generateSignal(bit,freq, duration, bandwidth):
     bitArry = bitfield(bit)
     value = []
+    if len(bitArry) != 4:
+        bitArry.insert(0,0)
     for i in range(len(bitArry)):
         if bitArry[i] == 1:
             value.append(freq[i])
 
-    return generateSoundCombination(chirp_linear,freq,duration,bandwidth)
+    return generateSoundCombination(chirp_linear,value,duration,bandwidth)
 
 nullWave = generateSinFreqDuration(0,1000,0.08)
 
 wave0 = generateSoundCombination(chirp_linear,[7000],0.04,500)
-wave1 = generateSignal(11,freq_range,0.08,500)
-wave2 = generateSignal(13,freq_range,0.08,500)
+wave1 = generateSignal(9,freq_range,0.08,500)
+wave2 = generateSignal(4,freq_range,0.08,500)
 
 waveFinal = nullWave + wave0 + nullWave + wave1 + nullWave + wave2 + nullWave
 

@@ -63,11 +63,20 @@ for i in range(len(freq_oneside_chunk)):
         start_index = i
         break
 
+print("start_index",start_index)
+
 time_start1 = time_chunk[start_index+2][0]
 time_end1 = time_chunk[start_index+5][-1]
 
 time_start2 = time_chunk[start_index+6][0]
 time_end2 = time_chunk[start_index+9][-1]
+
+print("time_start1",time_start1)
+print("time_start2",time_start2)
+
+print("time_end1",time_end1)
+print("time_end2",time_end2)
+
 
 
 fs_rate, signal, l_audio, N, secs, Ts = readWaveFile('custom.wav')
@@ -80,7 +89,7 @@ end_index1 = np.nonzero(t == time_end1)[0][0]
 n = end_index1 - start_index1 + 1
 FFT1 = abs(scipy.fft(signal[start_index1:end_index1]))
 FFT_side1 = FFT1[range(int(n/ 2))]
-freqs1 = scipy.fftpack.fftfreq(n, t[1] - t[0])
+freqs1 = scipy.fftpack.fftfreq(n, t[start_index1+1] - t[start_index1])
 fft_freqs1 = np.array(freqs1)
 freqs_side1 = freqs1[range(int(n / 2))]  # one side frequency range
 
@@ -90,9 +99,9 @@ end_index2 = np.nonzero(t == time_end2)[0][0]
 n = end_index2 - start_index2 + 1
 FFT2 = abs(scipy.fft(signal[start_index2:end_index2]))
 FFT_side2 = FFT2[range(int(n/ 2))]
-freqs2 = scipy.fftpack.fftfreq(n, t[1] - t[0])
+freqs2 = scipy.fftpack.fftfreq(n, t[start_index1+1] - t[start_index1])
 fft_freqs2 = np.array(freqs2)
-freqs_side2 = freqs1[range(int(n / 2))]  # one side frequency range
+freqs_side2 = freqs2[range(int(n / 2))]  # one side frequency range
 
 freq = np.arange(2500,6500,500)
 
