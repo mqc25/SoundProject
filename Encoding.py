@@ -21,8 +21,8 @@ def generateSignal(bit,freq, duration, bandwidth):
 nullWave = generateSinFreqDuration(0,1000,0.08)
 
 wave0 = generateSoundCombination(chirp_linear,[7000],0.04,500)
-wave1 = generateSignal(9,freq_range,0.08,500)
-wave2 = generateSignal(4,freq_range,0.08,500)
+wave1 = generateSignal(13,freq_range,0.08,500)
+wave2 = generateSignal(11,freq_range,0.08,500)
 
 waveFinal = nullWave + wave0 + nullWave + wave1 + nullWave + wave2 + nullWave
 

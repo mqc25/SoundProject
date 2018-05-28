@@ -46,7 +46,7 @@ freq = np.arange(2500,13000,250)
 
 
 
-time_chunk, freq_oneside_chunk, FFT_side_chunk = performFFTinChunk('custom.wav',0.04)
+time_chunk, freq_oneside_chunk, FFT_side_chunk = performFFTinChunk('test8.wav',0.04)
 freq = [7000]
 result_chunk = []
 
@@ -79,7 +79,7 @@ print("time_end2",time_end2)
 
 
 
-fs_rate, signal, l_audio, N, secs, Ts = readWaveFile('custom.wav')
+fs_rate, signal, l_audio, N, secs, Ts = readWaveFile('test8.wav')
 
 # t = scipy.arange(0, secs, Ts)  # time vector as scipy arange field / numpy.ndarray
 t = np.linspace(0, secs, signal.size)
