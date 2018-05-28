@@ -63,14 +63,9 @@ def plotFFT(t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_si
 
 def getFFTfromFile(waveFileName):
     t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_side = performFFTonFile(waveFileName)
-    plotFFT(t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_side)
     return freqs_side, abs(FFT_side)
 
 
-freq_oneside, FFT_side = getFFTfromFile('custom.wav')
-
-plt.plot(freq_oneside,FFT_side)
-plt.show()
-
-
+t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_side = performFFTonFile('custom.wav')
+plotFFT(t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_side)
 
