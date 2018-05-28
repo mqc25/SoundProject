@@ -28,7 +28,7 @@ def getIntegral(indexStart,indexEnd,FFT):
         value.append(sum(FFT[indexStart[i]:indexEnd[i]]))
     return value
 
-freq_oneside, FFT_side = getFFTfromFile('test4.wav')
+freq_oneside, FFT_side = getFFTfromFile('test5.wav')
 freq = np.arange(0,13000,250)
 
 indexStart,indexEnd = getStartEndIndex(freq,freq_oneside,500)
