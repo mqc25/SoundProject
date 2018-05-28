@@ -66,6 +66,6 @@ def getFFTfromFile(waveFileName):
     return freqs_side, abs(FFT_side)
 
 
-t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_side = performFFTonFile('custom.wav')
-plotFFT(t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_side)
+#t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_side = performFFTonFile('custom.wav')
+#plotFFT(t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_side)
 
