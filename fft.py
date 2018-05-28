@@ -27,7 +27,7 @@ def performFFTonFile(waveFileName):
     fs_rate, signal, l_audio, N, secs, Ts = readWaveFile(waveFileName)
 
     #t = scipy.arange(0, secs, Ts)  # time vector as scipy arange field / numpy.ndarray
-    t = np.linspace(0,Ts,signal.size)
+    t = np.linspace(0,secs,signal.size)
     FFT = abs(scipy.fft(signal))
     FFT_side = FFT[range(int(N / 2))]  # one side FFT range
     freqs = scipy.fftpack.fftfreq(signal.size, t[1] - t[0])

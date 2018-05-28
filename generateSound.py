@@ -29,10 +29,11 @@ def generateCustomChirp(func, frequency, duration, bandwidth):
 
 def combineWaveForm(listWaveForm):
     num = len(listWaveForm)
-    value = listWaveForm[0]
-    for i in range(1, num):
-        value = [x + y for x, y in zip(value, listWaveForm[i])]
-
+    print(listWaveForm)
+    value = []
+    for i in range(len(listWaveForm[0])):
+        value.append(sum([x[i] for x in listWaveForm]))
+    print(value)
     value = [int(x / num) for x in value]
     return value
 
@@ -76,6 +77,17 @@ def chirp_exponential(time, frequency, duration, bandwidth):
     k = ((frequency + bandwidth) / (frequency)) ** (1.0 / duration)
     return sin(2 * pi * frequency * ((k ** ((time % duration) - duration) - 1.0) / (np.log(k))))
 
+def generateSoundCombination(func,freq,duration,bandwidth):
+    nullWave = generateSinFreqDuration(0, 1000, duration)
+    wave = []
+    for i in range(len(freq)):
+        if freq[i] == -1:
+            wave.append(nullWave)
+            continue
+        wave.append(generateCustomChirp(func,freq[i],duration,bandwidth))
+    return combineWaveForm(wave)
+
+
 
 nullWave = generateSinFreqDuration(0, 1000, 0.08)
 
@@ -84,7 +96,9 @@ wave2 = generateCustomChirp(chirp_linear, 8000, 0.08, 500)
 wave3 = generateCustomChirp(chirp_linear, 10000, 0.08, 500)
 
 
-waveFinal = nullWave + wave1 + nullWave + wave2 + nullWave + wave3 + nullWave
+#waveFinal = nullWave + wave1 + nullWave + wave2 + nullWave + wave3 + nullWave
+freq = [2000,3000,-1,4000,-1,6000,-1, 8000,9000, 10000,11000, 12000]
+waveFinal = generateSoundCombination(chirp_linear,freq,0.2,500)
 createWaveFormFile('custom.wav', waveFinal)
 # plotSignal('custom.wav')
 # plt.show()

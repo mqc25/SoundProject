@@ -2,35 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10ba16c0-6c6b-4305-90ed-e8a318c3d26b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Encoding.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chirp.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chirp10.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chirp11.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chirp13.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chirp2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chirp3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chirp5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chirp6.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chirp7.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chirp8.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/custom.wav" beforeDir="false" afterPath="$PROJECT_DIR$/custom.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fft.py" beforeDir="false" afterPath="$PROJECT_DIR$/fft.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generateSound.py" beforeDir="false" afterPath="$PROJECT_DIR$/generateSound.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reading.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reading10.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reading11.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reading2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reading20.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reading3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reading4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reading5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reading6.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reading7.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reading8.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reading9.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/record.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sound.wav" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fft.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fft.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fft.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="156">
+              <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -53,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generateSound.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="generateSound.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generateSound.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1343">
-              <caret line="79" column="48" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
+            <state relative-caret-position="353">
+              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -309,22 +284,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fft.py">
+    <entry file="file://$PROJECT_DIR$/generateSound.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="353">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generateSound.py">
+    <entry file="file://$PROJECT_DIR$/fft.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="79" column="48" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
+        <state relative-caret-position="156">
+          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
