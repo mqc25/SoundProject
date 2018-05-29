@@ -47,7 +47,7 @@ def getIntegral(indexStart,indexEnd,FFT):
 
 def findFirstIndex(waveFileName):
     time_chunk, freq_oneside_chunk, FFT_side_chunk = performFFTinChunk(waveFileName, 0.04)
-    freq = [12000]
+    freq = [7000]
     result_chunk = []
 
     time_start = []
@@ -78,7 +78,7 @@ def getPackage(waveFileName,start_i, numPackage, time):
     fs_rate, signal, l_audio, N, secs, Ts = readWaveFile(waveFileName)
     t = np.linspace(0, secs, signal.size)
 
-    freq = np.arange(2000, 13000, 500)
+    freq = np.arange(2500, 6500, 500)
 
     for i in range(numPackage):
         start = np.nonzero(t == time_start[i])[0][0]
@@ -90,13 +90,13 @@ def getPackage(waveFileName,start_i, numPackage, time):
         fft_freqs = np.array(freqs)
         freqs_side = freqs[range(int(n / 2))]  # one side frequency range
 
-        indexStart, indexEnd = getStartEndIndex(freq, freqs_side, 5000)
+        indexStart, indexEnd = getStartEndIndex(freq, freqs_side, 500)
         result = getIntegral(indexStart, indexEnd, FFT_side)
 
         plt.plot(freq, result)
         plt.show()
-
-testSound = 'test19.wav'
+#testSound = 'custom.wav'
+testSound = 'test22.wav'
 start_index, time = findFirstIndex(testSound)
 getPackage(testSound,start_index,16,time)
 
