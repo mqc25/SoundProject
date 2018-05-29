@@ -47,7 +47,7 @@ max_threshold = 0
 
 def findFirstIndex(waveFileName):
     time_chunk, freq_oneside_chunk, FFT_side_chunk = performFFTinChunk(waveFileName, 0.04)
-    freq = [7000]
+    freq = [9000]
     result_chunk = []
 
     time_start = []
@@ -82,8 +82,8 @@ def getPackage(waveFileName,start_i, numPackage, time):
     fs_rate, signal, l_audio, N, secs, Ts = readWaveFile(waveFileName)
     t = np.linspace(0, secs, signal.size)
 
-    freq = np.arange(2500, 13500, 500)
-
+    freq = np.arange(1500, 8500, 500)
+    freq_target = [3000,4000,5000,6000]
     for i in range(numPackage):
         print(time_start[i], time_end[i])
         start = np.nonzero(t == time_start[i])[0][0]
@@ -98,18 +98,22 @@ def getPackage(waveFileName,start_i, numPackage, time):
         indexStart, indexEnd = getStartEndIndex(freq, freqs_side, 500)
         result = getIntegral(indexStart, indexEnd, FFT_side)
 
-        threshold = max(result)/ 2.2
+        threshold = max(result)/ 3
         if threshold < max_threshold/4.0:
             threshold = max_threshold/4.0
-        bit = [ 1 if result[1] > threshold else 0,
-                1 if result[3] > threshold else 0,
-                1 if result[5] > threshold else 0,
-                1 if result[7] > threshold else 0 ]
+        if result.index(max(result)) == 1:
+            bit = [0,0,0,0]
+        else:
+            bit = [ 1 if result[7] > threshold else 0,
+                    1 if result[9] > threshold else 0,
+                    1 if result[11] > threshold else 0,
+                    1 if result[13] > threshold else 0 ]
+
         print(bit)
         plt.plot(freq, result)
         plt.show()
 #testSound = 'custom.wav'
-testSound = 'test26.wav'
+testSound = 'test28.wav'
 start_index, time = findFirstIndex(testSound)
 print(max_threshold)
 getPackage(testSound,start_index,16,time)
