@@ -139,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Decoding">
+  <component name="RunManager" selected="Python.Encoding">
     <configuration name="Decoding" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SoundProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,8 +220,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Decoding" />
         <item itemvalue="Python.Encoding" />
+        <item itemvalue="Python.Decoding" />
         <item itemvalue="Python.fft" />
       </list>
     </recent_temporary>

@@ -19,7 +19,7 @@ def generateSignal(bit,freq, duration, bandwidth):
 
     return generateSoundCombination(chirp_linear,value,duration,bandwidth)
 
-nullWave = generateSinFreqDuration(0,1000,0.08)
+nullWave = generateSinFreqDuration(0,1000,0.16)
 
 
 bitSequence = [13,11,12,3,8,10,1,9,4,5,14,7,0,6,15,2]
@@ -27,9 +27,8 @@ num = len(bitSequence)
 
 waveEncode = generateSoundCombination(chirp_linear,[9000],0.04,500) + nullWave
 for i in bitSequence:
-    waveEncode += generateSignal(i,freq_range,0.08,500) + nullWave
-    waveEncode += generateSignal(i,freq_range,0.08,500) + nullWave
-    waveEncode += generateSignal(i,freq_range,0.08,500) + nullWave
+    waveEncode += generateSignal(i,freq_range,0.16,500) + nullWave
+
 
 
 
