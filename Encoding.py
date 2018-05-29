@@ -1,7 +1,7 @@
 from generateSound import *
 import numpy as np
 
-freq_range = [3000,4000,5000,6000]
+freq_range = [3000,6000,9000,12000]
 
 def bitfield(n):
     return [int(digit) for digit in bin(n)[2:]] # [2:] to chop off the "0b" part

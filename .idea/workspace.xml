@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="10ba16c0-6c6b-4305-90ed-e8a318c3d26b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Decoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decoding.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom.wav" beforeDir="false" afterPath="$PROJECT_DIR$/custom.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generateSound.py" beforeDir="false" afterPath="$PROJECT_DIR$/generateSound.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Decoding.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Decoding.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Decoding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state relative-caret-position="119">
+              <caret line="103" column="34" lean-forward="true" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -51,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Encoding.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Encoding.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Encoding.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="122">
@@ -75,8 +73,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>custom.wav</find>
-      <find>fft_freqs_side</find>
       <find>print</find>
+      <find>fft_freqs_side</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -89,8 +87,8 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/fft.py" />
         <option value="$PROJECT_DIR$/Encoding.py" />
-        <option value="$PROJECT_DIR$/Decoding.py" />
         <option value="$PROJECT_DIR$/generateSound.py" />
+        <option value="$PROJECT_DIR$/Decoding.py" />
       </list>
     </option>
   </component>
@@ -339,6 +337,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Encoding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fft.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -361,20 +369,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Decoding.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state relative-caret-position="119">
+          <caret line="103" column="34" lean-forward="true" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Encoding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
