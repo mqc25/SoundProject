@@ -27,13 +27,13 @@ def generateCustomChirp(func, frequency, duration, bandwidth):
         value.append(int(func(i / sampleRate, frequency, duration, bandwidth) * 32767.0))
     return value
 
-def combineWaveForm(listWaveForm):
+def combineWaveForm(listWaveForm,duration):
     num = len(listWaveForm)
-    print(listWaveForm)
     value = []
+    if len(listWaveForm) == 0:
+        return generateSinFreqDuration(0,1000,duration)
     for i in range(len(listWaveForm[0])):
         value.append(sum([x[i] for x in listWaveForm]))
-    print(value)
     value = [int(x / num) for x in value]
     return value
 
@@ -85,7 +85,7 @@ def generateSoundCombination(func,freq,duration,bandwidth):
             wave.append(nullWave)
             continue
         wave.append(generateCustomChirp(func,freq[i],duration,bandwidth))
-    return combineWaveForm(wave)
+    return combineWaveForm(wave,duration)
 
 
 

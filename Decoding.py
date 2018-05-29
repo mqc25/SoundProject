@@ -44,7 +44,7 @@ freq = np.arange(2500,13000,250)
 
 
 
-testSound = 'test10.wav'
+testSound = 'test11.wav'
 
 def findFirstIndex(waveFileName):
     time_chunk, freq_oneside_chunk, FFT_side_chunk = performFFTinChunk(waveFileName, 0.04)
@@ -98,7 +98,7 @@ def getPackage(waveFileName,start_i, numPackage, time):
         plt.show()
 
 start_index, time = findFirstIndex(testSound)
-getPackage(testSound,start_index,6,time)
+getPackage(testSound,start_index,16,time)
 
 # print("start_index",start_index)
 #
