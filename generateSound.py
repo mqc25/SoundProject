@@ -29,6 +29,7 @@ def generateCustomChirp(func, frequency, duration, bandwidth):
 
 def combineWaveForm(listWaveForm,duration):
     num = len(listWaveForm)
+    num = 4
     value = []
     if len(listWaveForm) == 0:
         return generateSinFreqDuration(0,1000,duration)
