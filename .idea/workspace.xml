@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="10ba16c0-6c6b-4305-90ed-e8a318c3d26b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Decoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decoding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Encoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/Encoding.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +41,8 @@
       <file leaf-file-name="Decoding.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Decoding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="170">
+              <caret line="86" column="31" lean-forward="true" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -52,8 +53,8 @@
       <file leaf-file-name="Encoding.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Encoding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="289">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -138,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Encoding">
+  <component name="RunManager" selected="Python.Decoding">
     <configuration name="Decoding" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SoundProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -219,8 +220,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Encoding" />
         <item itemvalue="Python.Decoding" />
+        <item itemvalue="Python.Encoding" />
         <item itemvalue="Python.fft" />
       </list>
     </recent_temporary>
@@ -359,8 +360,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Encoding.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="289">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
@@ -369,8 +370,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Decoding.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="170">
+          <caret line="86" column="31" lean-forward="true" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>

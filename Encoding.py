@@ -29,6 +29,7 @@ waveEncode = generateSoundCombination(chirp_linear,[9000],0.04,500) + nullWave
 for i in bitSequence:
     waveEncode += generateSignal(i,freq_range,0.08,500) + nullWave
     waveEncode += generateSignal(i,freq_range,0.08,500) + nullWave
+    waveEncode += generateSignal(i,freq_range,0.08,500) + nullWave
 
 
 
