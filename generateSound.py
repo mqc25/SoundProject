@@ -32,7 +32,9 @@ def combineWaveForm(listWaveForm,duration):
     num = 4
     value = []
     if len(listWaveForm) == 0:
-        return generateSinFreqDuration(0.1,4000,duration)
+        value = generateCustomChirp(chirp_linear,3000,duration,500)
+        value = [int(x/4) for x in value]
+        return value
     for i in range(len(listWaveForm[0])):
         value.append(sum([x[i] for x in listWaveForm]))
     value = [int(x / num) for x in value]
