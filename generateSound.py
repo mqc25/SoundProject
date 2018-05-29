@@ -32,7 +32,7 @@ def combineWaveForm(listWaveForm,duration):
     num = 4
     value = []
     if len(listWaveForm) == 0:
-        return generateSinFreqDuration(0.25,2000,duration)
+        return generateSinFreqDuration(0.1,2000,duration)
     for i in range(len(listWaveForm[0])):
         value.append(sum([x[i] for x in listWaveForm]))
     value = [int(x / num) for x in value]
