@@ -108,7 +108,7 @@ def getPackage(waveFileName,start_i, numPackage, time):
         plt.plot(freq, result)
         plt.show()
 #testSound = 'custom.wav'
-testSound = 'test23.wav'
+testSound = 'test24.wav'
 start_index, time = findFirstIndex(testSound)
 getPackage(testSound,start_index,16,time)
 
