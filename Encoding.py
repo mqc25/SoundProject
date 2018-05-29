@@ -1,7 +1,7 @@
 from generateSound import *
 import numpy as np
 
-freq_range = [3000,6000,9000,12000]
+freq_range = [3000,5000,7000,9000]
 
 def bitfield(n):
     return [int(digit) for digit in bin(n)[2:]] # [2:] to chop off the "0b" part
@@ -25,7 +25,7 @@ nullWave = generateSinFreqDuration(0,1000,0.08)
 bitSequence = [13,11,12,3,8,10,1,9,4,5,14,7,0,6,15,2]
 num = len(bitSequence)
 
-waveEncode = generateSoundCombination(chirp_linear,[7000],0.04,500) + nullWave
+waveEncode = generateSoundCombination(chirp_linear,[6000],0.04,500) + nullWave
 for i in bitSequence:
     waveEncode += generateSignal(i,freq_range,0.08,500) + nullWave
 
