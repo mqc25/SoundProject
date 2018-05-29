@@ -76,7 +76,7 @@ def getPackage(waveFileName,start_i, numPackage, time):
     time_end = []
     for i in range(numPackage):
         time_start.append(time[start_i+2 + 4*i][0])
-        time_end.append(time[start_i + 5 + 4*i][-1])
+        time_end.append(time[start_i + 9 + 4*i][-1])
 
 
     fs_rate, signal, l_audio, N, secs, Ts = readWaveFile(waveFileName)
@@ -98,10 +98,10 @@ def getPackage(waveFileName,start_i, numPackage, time):
         indexStart, indexEnd = getStartEndIndex(freq, freqs_side, 500)
         result = getIntegral(indexStart, indexEnd, FFT_side)
 
-        threshold = max(result)/ 3
+        threshold = max(result)/ 2.0
         if threshold < max_threshold/4.0:
             threshold = max_threshold/4.0
-        if result.index(max(result)) == 1:
+        if result.index(max(result)) < 6:
             bit = [0,0,0,0]
         else:
             bit = [ 1 if result[7] > threshold else 0,
@@ -113,7 +113,7 @@ def getPackage(waveFileName,start_i, numPackage, time):
         plt.plot(freq, result)
         plt.show()
 #testSound = 'custom.wav'
-testSound = 'test28.wav'
+testSound = 'test32.wav'
 start_index, time = findFirstIndex(testSound)
 print(max_threshold)
 getPackage(testSound,start_index,16,time)
