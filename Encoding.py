@@ -1,7 +1,8 @@
 from generateSound import *
 import numpy as np
 
-freq_range = [5000, 6000, 7000, 8000]
+#freq_range = [5000, 6000, 7000, 8000]
+freq_range = [5000, 5200, 5400, 5600]
 zero_freq = [3000]
 start_freq = [9000]
 

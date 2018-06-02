@@ -76,7 +76,7 @@ def findSignal(mag, phase, freq, startFreq, bandwidth):
     for band in mag:
         signalPow.append(sum(band[index[0][0]:index[0][1]]))
 
-    signalIndex = sorted(range(len(signalPow)), key=lambda i: signalPow[i])[-5:]
+    signalIndex = sorted(range(len(signalPow)), key=lambda i: signalPow[i])[-15:]
     signalIndex.reverse()
 
     i = range(0, len(signalPow), 1)
@@ -90,7 +90,8 @@ def findSignal(mag, phase, freq, startFreq, bandwidth):
 
 
 
-    while abs(signalIndex[0] - signalIndex[1]) < 5:
+    while abs(signalIndex[0] - signalIndex[1]) < 50:
+        print(signalIndex[0],signalIndex[1])
         del(signalIndex[1])
 
     signalIndex = [signalIndex[0], signalIndex[1]]
@@ -124,8 +125,8 @@ def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth):
     print(index)
 
 
-mag, phase, freq = doFFT('test4.wav', 0.04)
+mag, phase, freq = doFFT('test5.wav', 0.04)
 mag, phase, freq = findSignal(mag, phase, freq, 9000, 100)
 
-freq_list = list(range(2000, 11000, 100))
+freq_list = list(range(2500, 11000, 100))
 doIntegral(mag, phase, freq, freq_list, 8, 100)
