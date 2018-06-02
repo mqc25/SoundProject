@@ -2,41 +2,37 @@ from generateSound import *
 import numpy as np
 
 freq_range = [5000, 6000, 7000, 8000]
+zero_freq = [3000]
+start_freq = [9000]
+
 
 def bitfield(n):
-    return [int(digit) for digit in bin(n)[2:]] # [2:] to chop off the "0b" part
+    return [int(digit) for digit in bin(n)[2:]]  # [2:] to chop off the "0b" part
 
 
-def generateSignal(bit,freq, duration, bandwidth):
+def generateSignal(bit, freq, numCarrier, duration, bandwidth, zero):
     bitArry = bitfield(bit)
     value = []
-    while len(bitArry) != 4:
-        bitArry.insert(0,0)
+    while len(bitArry) != numCarrier:
+        bitArry.insert(0, 0)
     print(bitArry)
     for i in range(len(bitArry)):
         if bitArry[i] == 1:
             value.append(freq[i])
-
-    return generateSoundCombination(chirp_linear,value,duration,bandwidth)
-
-nullWave = generateSinFreqDuration(0,1000,0.16)
-
-
-bitSequence = [13,11,12,3,8,10,1,9,4,5,14,7,0,6,15,2]
-num = len(bitSequence)
-
-waveEncode = generateSoundCombination(chirp_linear,[9000],0.04,500) + nullWave
-for i in bitSequence:
-    waveEncode += generateSignal(i,freq_range,0.16,500) + nullWave
+    if len(value) == 0:
+        return generateSoundCombination(chirp_linear, zero, numCarrier, duration, bandwidth)
+    return generateSoundCombination(chirp_linear, value, numCarrier, duration, bandwidth)
 
 
+def generateFullSignal(bits, startFreq, startDuration, freqRange, zeroFreq, duration, bandwidth):
+    nullWave = generateSinFreqDuration(0, 1000, duration)
+    waveEncode = nullWave + generateSoundCombination(chirp_linear, startFreq, len(freqRange), startDuration, bandwidth)
+    for i in bits:
+        waveEncode += nullWave + generateSignal(i, freqRange, len(freqRange), duration, bandwidth, zeroFreq)
+    waveEncode += nullWave + generateSoundCombination(chirp_linear, startFreq, len(freqRange), startDuration, bandwidth) + nullWave
+    return waveEncode
 
 
-# wave0 = generateSoundCombination(chirp_linear,[7000],0.04,500)
-# wave1 = generateSignal(13,freq_range,0.08,500)
-# wave2 = generateSignal(11,freq_range,0.08,500)
-#
-#
-# waveFinal = nullWave + wave0 + nullWave + wave1 + nullWave + wave2 + nullWave
-
-createWaveFormFile('custom.wav', waveEncode)
+bitSequence = [13, 11, 12, 3, 8, 10, 1, 9, 4, 5, 14, 7, 0, 6, 15, 2]
+waveFinal = generateFullSignal(bitSequence, start_freq, 0.04, freq_range, zero_freq, 0.16, 250)
+createWaveFormFile('custom.wav', waveFinal)

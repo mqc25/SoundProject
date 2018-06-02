@@ -39,6 +39,7 @@ def performFFTonFile(waveFileName):
 
     return t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_side
 
+
 def samplingList(time, duration):
     count = 1
     sample = []
@@ -56,14 +57,16 @@ def samplingList(time, duration):
             count += 1
     return sample
 
+
 def performFFTinChunk(waveFileName, duration):
     fs_rate, signal, l_audio, N, secs, Ts = readWaveFile(waveFileName)
     t = np.linspace(0, secs, signal.size)
 
     sample = samplingList(t, duration)
 
-    sampleTime =[]
-    sampleFFT_side = []
+    sampleTime = []
+    sampleFFT_Mag_side = []
+    sampleFFT_Phase_side = []
     sampleFregs_side = []
 
     for i in sample:
@@ -71,14 +74,15 @@ def performFFTinChunk(waveFileName, duration):
         sampleTimeTemp = t[i[0]:i[1]]
         n = i[1] - i[0] + 1
         sampleSignal = (signal[i[0]:i[1]])
-        sampleFFT = abs(scipy.fft(sampleSignal))
-        sampleFFT_side.append(abs(sampleFFT[range(int(n / 2))]) ) # one side FFT range
-        sampleFreqs = scipy.fftpack.fftfreq(sampleSignal.size, sampleTimeTemp[1] - sampleTimeTemp[0])
-        sampleFregs_side.append(sampleFreqs[range(int(n / 2))] ) # one side frequency range
+        sampleFFT = scipy.fft(sampleSignal)
+        sampleFFT_Mag_side.append(abs(sampleFFT[range(int(n / 2))]))  # one side FFT range
+        sampleFFT_Phase_side.append(np.angle(sampleFFT[range(int(n / 2))]))
+        sampleFreqs = scipy.fftpack.fftfreq(sampleSignal.size, 1./fs_rate)
+        sampleFregs_side.append(sampleFreqs[range(int(n / 2))])  # one side frequency range
 
-    return sampleTime, sampleFregs_side, sampleFFT_side
+    print(sampleFregs_side)
+    return sampleTime, sampleFregs_side, sampleFFT_Mag_side, sampleFFT_Phase_side
 
-print(performFFTinChunk('test6.wav',0.04))
 
 def plotFFT(t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_side):
     fig = plt.figure()
@@ -110,9 +114,6 @@ def getFFTfromFile(waveFileName):
     return freqs_side, abs(FFT_side)
 
 
-
-
-
 def getFFTinChunk(freq_list, fft_list, sampling):
     freq_l = []
     fft_l = []
@@ -121,7 +122,6 @@ def getFFTinChunk(freq_list, fft_list, sampling):
         fft_l.append(fft_list[i[0]:i[1]])
     return freq_l, fft_l
 
-
-
-t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_side = performFFTonFile('custom.wav')
-plotFFT(t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_side)
+#performFFT('custom.wav',0.04)
+#t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_side = performFFTonFile('custom.wav')
+#plotFFT(t, signal, FFT, FFT_side, freqs, fft_freqs, freqs_side, fft_freqs_side)
