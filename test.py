@@ -124,8 +124,8 @@ def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth):
     print(index)
 
 
-mag, phase, freq = doFFT('test3.wav', 0.04)
-mag, phase, freq = findSignal(mag, phase, freq, 9000, 250)
+mag, phase, freq = doFFT('test4.wav', 0.04)
+mag, phase, freq = findSignal(mag, phase, freq, 9000, 100)
 
-freq_list = list(range(2000, 11000, 250))
-doIntegral(mag, phase, freq, freq_list, 8, 250)
+freq_list = list(range(2000, 11000, 100))
+doIntegral(mag, phase, freq, freq_list, 8, 100)
