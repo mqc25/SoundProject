@@ -29,7 +29,7 @@ def getIntegral(indexStart, indexEnd, FFT):
 
 def findFirstIndex(waveFileName):
     time_chunk, freq_oneside_chunk, FFT_side_chunk, FFT_phase_chunk = performFFTinChunk(waveFileName, 0.04)
-    freq = [9000]
+    freq = [9500]
     result_chunk = []
 
     time_start = []

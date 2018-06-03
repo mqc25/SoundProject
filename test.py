@@ -137,18 +137,17 @@ def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth,freq_target):
                 else:
                     msg.append(0)
         allMsg.append(msg)
-        # plt.plot(freq_list, signalPow)
-        # plt.show()
+        plt.plot(freq_list, signalPow)
+        plt.show()
         totalSignalPow.append(signalPow)
     #print(len(signalList))
     #print(index)
     return allMsg
 
 
-# mag, phase, freq = doFFT('test12.wav', 0.04)
-# mag, phase, freq = findSignal(mag, phase, freq, 9000, 250)
-# freq_target = [3000]
-# freq_target += list(range(5000,9000,500))
-# print(freq_target)
-# freq_list = list(range(3000, 9500, 250))
-# doIntegral(mag, phase, freq, freq_list, 8, 250, freq_target)
+mag, phase, freq = doFFT('custom.wav', 0.04)
+mag, phase, freq = findSignal(mag, phase, freq, 9500, 250)
+freq_target = list(range(3000,9500,500))
+print(freq_target)
+freq_list = list(range(2500, 10500, 250))
+doIntegral(mag, phase, freq, freq_list, 8, 250, freq_target)
