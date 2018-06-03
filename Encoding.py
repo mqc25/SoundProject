@@ -17,7 +17,7 @@ def generateSignal(bit, freq, numCarrier, duration, bandwidth, zero):
     value = []
     while len(bitArry) != numCarrier:
         bitArry.insert(0, 0)
-    print(bitArry)
+    #print(bitArry)
     for i in range(len(bitArry)):
         if bitArry[i] == 1:
             value.append(freq[i])
@@ -36,6 +36,6 @@ def generateFullSignal(bits, startFreq, startDuration, freqRange, zeroFreq, dura
 
 
 #bitSequence = [13, 11, 12, 3, 8, 10, 1, 9, 4, 5, 14, 7, 0, 6, 15, 2]
-bitSequence = [13, 25, 50, 75, 100, 125, 150, 175, 200, 225, 255 ,0 , 128, 254,12,64,57,135,179,243]
-waveFinal = generateFullSignal(bitSequence, start_freq, 0.04, freq_range, zero_freq, 0.16, 250)
-createWaveFormFile('custom.wav', waveFinal)
+# bitSequence = [13, 25, 50, 75, 100, 125, 150, 175, 200, 225, 255 ,0 , 128, 254,12,64,57,135,179,243]
+# waveFinal = generateFullSignal(bitSequence, start_freq, 0.04, freq_range, zero_freq, 0.16, 250)
+# createWaveFormFile('custom.wav', waveFinal)

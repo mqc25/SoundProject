@@ -80,13 +80,13 @@ def findSignal(mag, phase, freq, startFreq, bandwidth):
     signalIndex.reverse()
 
     i = range(0, len(signalPow), 1)
-    plt.plot(i, signalPow)
-    ml = MultipleLocator(1)
-    Ml = MultipleLocator(10)
-    plt.axes().xaxis.set_minor_locator(ml)
-    plt.axes().xaxis.set_major_locator(Ml)
-    plt.grid(True, 'both')
-    plt.show()
+    # plt.plot(i, signalPow)
+    # ml = MultipleLocator(1)
+    # Ml = MultipleLocator(10)
+    # plt.axes().xaxis.set_minor_locator(ml)
+    # plt.axes().xaxis.set_major_locator(Ml)
+    # plt.grid(True, 'both')
+    # plt.show()
 
 
 
@@ -103,7 +103,8 @@ def findSignal(mag, phase, freq, startFreq, bandwidth):
     return mag[signalIndex[0]:signalIndex[1]], phase[signalIndex[0]:signalIndex[1]], freq
 
 
-def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth):
+def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth,freq_target):
+    allMsg = []
     signalList = []
     for i in range(int(len(mag) / packageSize)):
         temp = mag[packageSize * i]
@@ -113,20 +114,41 @@ def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth):
         signalList.append(temp)
     index = findFreqIndex(freq_list, freq, bandwidth)
 
+    codeIndex = []
+    for i in freq_target:
+        codeIndex.append(freq_list.index(i))
     totalSignalPow = []
+
+
     for i in range(len(signalList)):
+        msg = []
         signalPow = []
         for j in range(len(freq_list)):
             signalPow.append(sum(signalList[i][index[j][0]:index[j][1]]))
-        plt.plot(freq_list, signalPow)
-        plt.show()
+
+        maxPower = max(signalPow)
+        threshold = maxPower/2.25
+        if signalPow.index(maxPower) == codeIndex[0]:
+            msg = [0,0,0,0,0,0,0,0]
+        else:
+            for i in range(1,len(codeIndex)):
+                if signalPow[codeIndex[i]] > threshold:
+                    msg.append(1)
+                else:
+                    msg.append(0)
+        allMsg.append(msg)
+        # plt.plot(freq_list, signalPow)
+        # plt.show()
         totalSignalPow.append(signalPow)
     print(len(signalList))
     print(index)
+    return allMsg
 
 
-mag, phase, freq = doFFT('test7.wav', 0.04)
-mag, phase, freq = findSignal(mag, phase, freq, 9000, 250)
-
-freq_list = list(range(3000, 9500, 250))
-doIntegral(mag, phase, freq, freq_list, 8, 250)
+# mag, phase, freq = doFFT('test12.wav', 0.04)
+# mag, phase, freq = findSignal(mag, phase, freq, 9000, 250)
+# freq_target = [3000]
+# freq_target += list(range(5000,9000,500))
+# print(freq_target)
+# freq_list = list(range(3000, 9500, 250))
+# doIntegral(mag, phase, freq, freq_list, 8, 250, freq_target)
