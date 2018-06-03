@@ -2,7 +2,7 @@ from generateSound import *
 import numpy as np
 
 #freq_range = [5000, 6000, 7000, 8000]
-freq_range = [5000, 5200, 5400, 5600]
+freq_range = [5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500]
 zero_freq = [3000]
 start_freq = [9000]
 
@@ -34,6 +34,7 @@ def generateFullSignal(bits, startFreq, startDuration, freqRange, zeroFreq, dura
     return waveEncode
 
 
-bitSequence = [13, 11, 12, 3, 8, 10, 1, 9, 4, 5, 14, 7, 0, 6, 15, 2]
-waveFinal = generateFullSignal(bitSequence, start_freq, 0.04, freq_range, zero_freq, 0.16, 100)
+#bitSequence = [13, 11, 12, 3, 8, 10, 1, 9, 4, 5, 14, 7, 0, 6, 15, 2]
+bitSequence = [13, 25, 50, 75, 100, 125, 150, 175, 200, 225, 255 ,0 , 128]
+waveFinal = generateFullSignal(bitSequence, start_freq, 0.04, freq_range, zero_freq, 0.16, 250)
 createWaveFormFile('custom.wav', waveFinal)
