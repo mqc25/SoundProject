@@ -9,6 +9,6 @@ def text2binary(text):
     return bin(int.from_bytes(text.encode(), 'big'))
 
 
-#Binary to text
-#n = int(Binary, 2)
-#text=n.to_bytes((n.bit_length() + 7) // 8, 'big').decode()
+#Binary to text, Binary='0b1000001' //can be any bnary sequence
+def n = int(Binary, 2)
+    return n.to_bytes((n.bit_length() + 7) // 8, 'big').decode() #decoded text is returned
