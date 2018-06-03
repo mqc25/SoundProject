@@ -41,7 +41,7 @@ def doFFT(waveFileName, timeUnit):
     freq_range = scipy.fftpack.fftfreq(sampleSize, Ts)[range(int(sampleSize / 2))]
     Mag = []
     Phase = []
-    print(sampleList)
+    #print(sampleList)
     for sample in sampleList:
         fft = scipy.fft(signal[sample[0]:sample[1]])
         fft = fft[range(int(sampleSize / 2))]
@@ -80,26 +80,26 @@ def findSignal(mag, phase, freq, startFreq, bandwidth):
     signalIndex.reverse()
 
     i = range(0, len(signalPow), 1)
-    # plt.plot(i, signalPow)
-    # ml = MultipleLocator(1)
-    # Ml = MultipleLocator(10)
-    # plt.axes().xaxis.set_minor_locator(ml)
-    # plt.axes().xaxis.set_major_locator(Ml)
-    # plt.grid(True, 'both')
-    # plt.show()
+    plt.plot(i, signalPow)
+    ml = MultipleLocator(1)
+    Ml = MultipleLocator(10)
+    plt.axes().xaxis.set_minor_locator(ml)
+    plt.axes().xaxis.set_major_locator(Ml)
+    plt.grid(True, 'both')
+    plt.show()
 
 
 
     while abs(signalIndex[0] - signalIndex[1]) < 50:
-        print(signalIndex[0],signalIndex[1])
+        #print(signalIndex[0],signalIndex[1])
         del(signalIndex[1])
 
     signalIndex = [signalIndex[0], signalIndex[1]]
     signalIndex.sort()
-    print(signalIndex)
+    #print(signalIndex)
 
     signalIndex[0] += 3
-    signalIndex[1] -= 2
+    signalIndex[1] -= 0
     return mag[signalIndex[0]:signalIndex[1]], phase[signalIndex[0]:signalIndex[1]], freq
 
 
@@ -127,7 +127,7 @@ def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth,freq_target):
             signalPow.append(sum(signalList[i][index[j][0]:index[j][1]]))
 
         maxPower = max(signalPow)
-        threshold = maxPower/2.25
+        threshold = maxPower/3
         if signalPow.index(maxPower) == codeIndex[0]:
             msg = [0,0,0,0,0,0,0,0]
         else:
@@ -140,8 +140,8 @@ def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth,freq_target):
         # plt.plot(freq_list, signalPow)
         # plt.show()
         totalSignalPow.append(signalPow)
-    print(len(signalList))
-    print(index)
+    #print(len(signalList))
+    #print(index)
     return allMsg
 
 

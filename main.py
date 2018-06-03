@@ -47,11 +47,11 @@ def sequenceToText(seq):
 
 def createWavFromMsg(text,waveFileName):
     seq = textToSequence(text)
-    print(sequenceToText(seq))
     createWavFile(waveFileName,seq)
 
 def decodeWavToMsg(waveFileName):
     estimateMsg = decodeMsg(waveFileName)
+    #print(estimateMsg)
     text = sequenceToText(estimateMsg)
     return text
 
@@ -67,8 +67,10 @@ def decodeWavToMsg(waveFileName):
 # print(bitSequence)
 # print(DecodeMsg)
 # errorChecking(bitSequence,DecodeMsg)
-sendMsg = "Hello World From Crazy Nacho"
+sendMsg = "Hi we are the most awesome team. Just testing no issue here."
 createWavFromMsg(sendMsg,'custom.wav')
-decodeFile = input('Record File Name: ')
+#decodeFile = input('Record File Name: ')
+decodeFile = 'test17.wav'
 textMsg = decodeWavToMsg(decodeFile)
+print(textToSequence(sendMsg))
 print(textMsg)
