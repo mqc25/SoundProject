@@ -3,9 +3,9 @@ import numpy as np
 #range of frequencies used for transmitting data
 
 #freq_range = [5000, 6000, 7000, 8000]
-freq_range = [3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000, 9500]
-zero_freq = [3000]
-start_freq = [10000]
+# freq_range = [3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000, 9500]
+# zero_freq = [3000]
+# start_freq = [10000]
 
 #generate spaced 0 and 1's from a given binary sequence
 def bitfield(n):

@@ -20,7 +20,7 @@ def decodeMsg(waveFileName):
     freq_target = freq_range
     #print(freq_target)
     freq_list = list(range(2500, 10500, 250))
-    msg = doIntegral(mag, phase, freq, freq_list, 4, 250, freq_target)
+    msg = doIntegral(mag, phase, freq, freq_list, 8, 250, freq_target)
     decodeMsg = []
     for singleMsg in msg:
         num = 0
@@ -85,8 +85,8 @@ sendMsg = 'Test another Signal this time.'
 print(sendMsg)
 createWavFromMsg(sendMsg,'custom.wav')
 
-#
-# decodeFile = 'avg3.wav'
-# textMsg = decodeWavToMsg(decodeFile)
-# print(sendMsg)
-# print(textMsg)
+
+decodeFile = 'long3.wav'
+textMsg = decodeWavToMsg(decodeFile)
+print(sendMsg)
+print(textMsg)
