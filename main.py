@@ -2,7 +2,7 @@ from Encoding import *
 from test import *
 from HammingCode import *
 
-freq_range = [3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000, 9500]
+freq_range = [3000,3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000, 9500]
 zero_freq = [3000]
 start_freq = [10000]
 
@@ -80,7 +80,11 @@ def decodeWavToMsg(waveFileName):
 <<<<<<< HEAD
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 sendMsg = 'Test another Signal this time.'
+=======
+sendMsg = 'The King Island emu lived.'
+>>>>>>> parent of 925aadb... 8
 
 # print(sendMsg)
 # createWavFromMsg(sendMsg,'custom.wav')
@@ -101,8 +105,16 @@ sendMsg = "The King Island emu lived on King Island, in the Bass Strait between 
 print(sendMsg)
 createWavFromMsg(sendMsg,'custom.wav')
 
+<<<<<<< HEAD
 
 #decodeFile = 'long2.wav'
 #textMsg = decodeWavToMsg(decodeFile)
 #print(textMsg)
 >>>>>>> parent of a926c86... 8
+=======
+#
+# decodeFile = 'short3.wav'
+# textMsg = decodeWavToMsg(decodeFile)
+# print(sendMsg)
+# print(textMsg)
+>>>>>>> parent of 925aadb... 8
