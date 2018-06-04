@@ -9,7 +9,7 @@ zero_freq = [3000]
 start_freq = [10000]
 
 def createWavFile(waveFileName,bits):
-    waveFinal = generateFullSignal(bits, start_freq, 0.04, freq_range, zero_freq, 0.08, 250)
+    waveFinal = generateFullSignal(bits, start_freq, 0.04, freq_range, zero_freq, 0.16, 250)
     createWaveFormFile('custom.wav', waveFinal)
 
 def decodeMsg(waveFileName):
@@ -81,11 +81,12 @@ def decodeWavToMsg(waveFileName):
 # errorChecking(bitSequence,DecodeMsg)
 
 sendMsg = 'The King Island emu lived.'
+
 print(sendMsg)
 createWavFromMsg(sendMsg,'custom.wav')
 
 #
-# decodeFile = 'long3.wav'
+# decodeFile = 'short3.wav'
 # textMsg = decodeWavToMsg(decodeFile)
 # print(sendMsg)
 # print(textMsg)
