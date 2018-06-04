@@ -4,7 +4,7 @@ from HammingCode import *
 import base64
 import zlib
 
-freq_range = [3000,3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000, 9500]
+freq_range = [3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000, 9500]
 zero_freq = [3000]
 start_freq = [10000]
 
@@ -80,13 +80,13 @@ def decodeWavToMsg(waveFileName):
 # print(DecodeMsg)
 # errorChecking(bitSequence,DecodeMsg)
 
-sendMsg = 'The King Island emu lived.'
+sendMsg = 'Test another Signal this time.'
 
 print(sendMsg)
 createWavFromMsg(sendMsg,'custom.wav')
 
 #
-# decodeFile = 'short3.wav'
+# decodeFile = 'avg3.wav'
 # textMsg = decodeWavToMsg(decodeFile)
 # print(sendMsg)
 # print(textMsg)
