@@ -82,11 +82,11 @@ def decodeWavToMsg(waveFileName):
 
 sendMsg = 'Test another Signal this time.'
 
-print(sendMsg)
-createWavFromMsg(sendMsg,'custom.wav')
+# print(sendMsg)
+# createWavFromMsg(sendMsg,'custom.wav')
 
 #
-# decodeFile = 'avg3.wav'
-# textMsg = decodeWavToMsg(decodeFile)
-# print(sendMsg)
-# print(textMsg)
+decodeFile = 'avg4.wav'
+textMsg = decodeWavToMsg(decodeFile)
+print(sendMsg)
+print(textMsg)
