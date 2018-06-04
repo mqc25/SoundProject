@@ -127,16 +127,21 @@ def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth,freq_target):
             signalPow.append(sum(signalList[i][index[j][0]:index[j][1]]))
 
         maxPower = max(signalPow)
-        threshold = maxPower/3
+        threshold = maxPower/2.5
         if signalPow.index(maxPower) == codeIndex[0]:
-            msg = [0,0,0,0,0,0,0,0]
+            msg = [0,0,0,0,0,0,0,0,0,0,0,0]
         else:
             for i in range(1,len(codeIndex)):
                 if signalPow[codeIndex[i]] > threshold:
                     msg.append(1)
                 else:
                     msg.append(0)
+
         allMsg.append(msg)
+        num = 0
+        for bit in msg:
+            num = (num << 1) | bit
+        print(msg, num)
         plt.plot(freq_list, signalPow)
         plt.show()
         totalSignalPow.append(signalPow)
