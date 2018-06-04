@@ -1,8 +1,6 @@
 from Encoding import *
 from test import *
 from HammingCode import *
-import base64
-import zlib
 
 freq_range = [3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000, 9500]
 zero_freq = [3000]
@@ -20,7 +18,7 @@ def decodeMsg(waveFileName):
     freq_target = freq_range
     #print(freq_target)
     freq_list = list(range(2500, 10500, 250))
-    msg = doIntegral(mag, phase, freq, freq_list, 4, 250, freq_target)
+    msg = doIntegral(mag, phase, freq, freq_list, 8, 250, freq_target)
     decodeMsg = []
     for singleMsg in msg:
         num = 0
@@ -81,6 +79,7 @@ def decodeWavToMsg(waveFileName):
 # errorChecking(bitSequence,DecodeMsg)
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 sendMsg = 'Test another Signal this time.'
 
 # print(sendMsg)
@@ -97,3 +96,13 @@ decodeFile = 'test35.wav'
 textMsg = decodeWavToMsg(decodeFile)
 print(sendMsg)
 print(textMsg)
+=======
+sendMsg = "The King Island emu lived on King Island, in the Bass Strait between mainland Australia and Tasmania. This extinct subspecies, the smallest of all emus, may have exhibited insular dwarfism. It had darker plumage, black and brown, with naked blue skin on the neck, and its chicks were striped like those on the mainland. The behaviour of the King Island emu probably did not differ much from that of the mainland emu. They fed on berries, grass and seaweed. They ran swiftly, and could defend themselves by kicking."
+print(sendMsg)
+createWavFromMsg(sendMsg,'custom.wav')
+
+
+#decodeFile = 'long2.wav'
+#textMsg = decodeWavToMsg(decodeFile)
+#print(textMsg)
+>>>>>>> parent of a926c86... 8
