@@ -171,7 +171,6 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
-    <option name="y" value="1" />
     <option name="width" value="1400" />
     <option name="height" value="1005" />
   </component>
@@ -197,6 +196,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Minh Cao/PycharmProjects/SoundProject/generateSound.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
@@ -336,10 +336,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.Encoding" />
         <item itemvalue="Python.fft" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.receive" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.Encoding" />
       </list>
     </recent_temporary>
   </component>
