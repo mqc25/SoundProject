@@ -80,13 +80,13 @@ def decodeWavToMsg(waveFileName):
 # print(DecodeMsg)
 # errorChecking(bitSequence,DecodeMsg)
 
-sendMsg = 'Test another Signal this time.'
+sendMsg = 'test MSG right now should not be any ISSUE leftover.'
 
 print(sendMsg)
 createWavFromMsg(sendMsg,'custom.wav')
 
 
-decodeFile = 'long3.wav'
-textMsg = decodeWavToMsg(decodeFile)
-print(sendMsg)
-print(textMsg)
+# decodeFile = 'avg11.wav'
+# textMsg = decodeWavToMsg(decodeFile)
+# print(sendMsg)
+# print(textMsg)

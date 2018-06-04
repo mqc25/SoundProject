@@ -15,8 +15,9 @@ c2 = [1] + p2
 c3 = [3] + p3
 c4 = [7] + p4
 
-#c = [c1, c2, c3, c4]
-c = [c4,c3,c2,c1]
+# c = [c1, c2, c3, c4]
+c = [c4, c3, c2, c1]
+
 
 def binaryToDec(bin):
     num = 0
@@ -27,7 +28,7 @@ def binaryToDec(bin):
 
 def generateHammingCode(num):
     seq = bitfield(num)
-    #print(num)
+    # print(num)
     while len(seq) != 8:
         seq.insert(0, 0)
     template = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -41,11 +42,11 @@ def generateHammingCode(num):
         template[parPos[i]] = temp
 
     temp = 0
-    for i in range(len(template) -1):
+    for i in range(len(template) - 1):
         temp ^= template[i]
     template[-1] = temp
-    #print(template)
-    #print(binaryToDec(template))
+    # print(template)
+    # print(binaryToDec(template))
     return binaryToDec(template)
 
 
@@ -74,8 +75,8 @@ def decodeHamingCode(num):
 
     for i in dataPos:
         msg.append(seq[i])
-    #print(seq)
-    #print(msg)
+    # print(seq)
+    # print(msg)
     return binaryToDec(msg)
 
 # #

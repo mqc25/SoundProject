@@ -3,9 +3,97 @@
   <component name="ChangeListManager">
     <list default="true" id="10ba16c0-6c6b-4305-90ed-e8a318c3d26b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Encoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/Encoding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HammingCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/HammingCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/avg.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avg2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avg3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avg5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avg6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avg7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avg8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avg9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom.wav" beforeDir="false" afterPath="$PROJECT_DIR$/custom.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/highF.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/highF1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long3.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parity1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parity2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real12.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real20.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real21.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real22.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real29.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/real9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/short1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/short2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/short3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test12.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test13.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test14.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test15.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test16.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test17.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test18.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test19.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test20.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test21.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test22.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test23.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test24.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test25.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test30.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test31.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test32.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test33.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test34.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test35.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test36.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test37.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test38.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test39.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test41.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test42.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test44.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test45.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test46.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test47.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test48.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test49.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test50.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test51.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test52.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test53.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test54.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test55.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test56.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test57.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test58.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traffic.wav" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +119,7 @@
       <file leaf-file-name="Decoding.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Decoding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
+            <state relative-caret-position="353">
               <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -43,7 +131,7 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
+            <state relative-caret-position="-1942">
               <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -55,8 +143,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="85" column="38" lean-forward="true" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
+            <state relative-caret-position="190">
+              <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -67,8 +155,8 @@
       <file leaf-file-name="Encoding.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Encoding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-174">
-              <caret line="5" selection-start-line="5" selection-start-column="2" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="129">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -79,7 +167,7 @@
       <file leaf-file-name="generateSound.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generateSound.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
+            <state relative-caret-position="1003">
               <caret line="59" selection-start-line="59" selection-end-line="59" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -91,8 +179,8 @@
       <file leaf-file-name="HammingCode.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HammingCode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+            <state relative-caret-position="231">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -166,12 +254,12 @@
         <option value="$PROJECT_DIR$/Server.py" />
         <option value="$PROJECT_DIR$/Client.py" />
         <option value="$PROJECT_DIR$/Decoding.py" />
-        <option value="$PROJECT_DIR$/HammingCode.py" />
         <option value="$PROJECT_DIR$/fft.py" />
         <option value="$PROJECT_DIR$/send.py" />
         <option value="$PROJECT_DIR$/receive.py" />
         <option value="$PROJECT_DIR$/Encoding.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/HammingCode.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -392,7 +480,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -717,16 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Decoding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/send.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -756,7 +841,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/generateSound.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
+        <state relative-caret-position="1003">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
@@ -764,19 +849,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Encoding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="5" selection-start-line="5" selection-start-column="2" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
+        <state relative-caret-position="-1942">
           <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -784,17 +859,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Encoding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HammingCode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        <state relative-caret-position="231">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Decoding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="85" column="38" lean-forward="true" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
+        <state relative-caret-position="190">
+          <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
