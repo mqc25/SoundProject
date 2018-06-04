@@ -80,6 +80,6 @@ def decodeWavToMsg(waveFileName):
 sendMsg = "Hi we are the most awesome team. Just testing no issue here."
 createWavFromMsg(sendMsg,'custom.wav')
 #decodeFile = input('Record File Name: ')
-decodeFile = 'test35.wav'
+decodeFile = 'test58.wav'
 textMsg = decodeWavToMsg(decodeFile)
 print(textMsg)
