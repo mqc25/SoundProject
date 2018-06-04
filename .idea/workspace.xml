@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10ba16c0-6c6b-4305-90ed-e8a318c3d26b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/receive.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/send.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom.wav" beforeDir="false" afterPath="$PROJECT_DIR$/custom.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test21.wav" beforeDir="false" afterPath="$PROJECT_DIR$/test21.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/receive.py" beforeDir="false" afterPath="$PROJECT_DIR$/receive.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="send.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="send.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/send.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-221">
@@ -66,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="receive.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="receive.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/receive.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2720">
-              <caret line="160" selection-start-line="160" selection-end-line="160" />
+            <state relative-caret-position="183">
+              <caret line="151" column="17" lean-forward="true" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -169,8 +164,8 @@
         <option value="$PROJECT_DIR$/Encoding.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/receive.py" />
         <option value="$PROJECT_DIR$/send.py" />
+        <option value="$PROJECT_DIR$/receive.py" />
       </list>
     </option>
   </component>
@@ -240,24 +235,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="fft" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="SoundProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fft.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="generateSound" type="PythonConfigurationType" factoryName="Python">
       <module name="SoundProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -289,6 +266,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="receive" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SoundProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/receive.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -335,16 +330,16 @@
       <item itemvalue="Python.Encoding" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.fft" />
       <item itemvalue="Python.send" />
+      <item itemvalue="Python.receive" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.send" />
+        <item itemvalue="Python.receive" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.Encoding" />
-        <item itemvalue="Python.fft" />
       </list>
     </recent_temporary>
   </component>
@@ -363,13 +358,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32965517" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32965517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -391,17 +387,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/send.py</url>
+          <url />
           <line>41</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/send.py</url>
+          <url />
           <line>31</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/send.py</url>
+          <url />
           <line>17</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
@@ -790,16 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/receive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2720">
-          <caret line="160" selection-start-line="160" selection-end-line="160" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generateSound.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
@@ -816,6 +802,16 @@
           <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="151" column="17" lean-forward="true" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

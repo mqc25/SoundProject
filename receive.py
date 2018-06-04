@@ -129,22 +129,22 @@ def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth,freq_target):
 
         maxPower = max(signalPow)
         threshold = maxPower/3
-        if signalPow.index(maxPower) == codeIndex[0]:
-            msg = [0,0,0,0,0,0,0,0,0,0,0,0]
-        else:
-            for i in range(1,len(codeIndex)):
-                if signalPow[codeIndex[i]] > threshold:
-                    msg.append(1)
-                else:
-                    msg.append(0)
-
-        allMsg.append(msg)
-        num = 0
-        for bit in msg:
-            num = (num << 1) | bit
-        print(msg, num)
-        # plt.plot(freq_list, signalPow)
-        # plt.show()
+        # if signalPow.index(maxPower) == codeIndex[0]:
+        #     msg = [0,0,0,0,0,0,0,0,0,0,0,0]
+        # else:
+        #     for i in range(1,len(codeIndex)):
+        #         if signalPow[codeIndex[i]] > threshold:
+        #             msg.append(1)
+        #         else:
+        #             msg.append(0)
+        #
+        # allMsg.append(msg)
+        # num = 0
+        # for bit in msg:
+        #     num = (num << 1) | bit
+        # print(msg, num)
+        plt.plot(freq_list, signalPow)
+        plt.show()
         totalSignalPow.append(signalPow)
     #print(len(signalList))
     #print(index)
@@ -152,9 +152,9 @@ def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth,freq_target):
     return allMsg
 
 #
-# mag, phase, freq = doFFT('custom.wav', 0.04)
-# mag, phase, freq = findSignal(mag, phase, freq, 9500, 250)
-# freq_target = list(range(3000,9500,500))
-# #print(freq_target)
-# freq_list = list(range(2500, 10500, 250))
-# doIntegral(mag, phase, freq, freq_list, 8, 250, freq_target)
+mag, phase, freq = doFFT('custom.wav', 0.04)
+mag, phase, freq = findSignal(mag, phase, freq, 8000, 1000)
+freq_target = list(range(3000,20000,500))
+#print(freq_target)
+freq_list = list(range(2500, 21000, 500))
+doIntegral(mag, phase, freq, freq_list, 8, 1000, freq_target)

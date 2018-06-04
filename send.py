@@ -41,5 +41,5 @@ def generateFullSignal(bits, startFreq, startDuration, freqRange, zeroFreq, dura
 #bitSequence = [13,56,178,378,2767,3437,1732,2605]
 bitSequence = [4095,3640, 1756, 2478, 3415, 3729, 3653, 1724, 3972, 2557, 2534,
                4045, 531,  38,   1485, 2039, 2286, 1897, 1837, 2041, 3893]
-waveFinal = generateFullSignal(bitSequence, start_freq, 0.04, freq_range, zero_freq, 0.16, 1000)
+waveFinal = generateFullSignal(bitSequence, start_freq, 0.04, freq_range, zero_freq, 0.16, 500)
 createWaveFormFile('custom.wav', waveFinal)
