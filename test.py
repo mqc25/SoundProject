@@ -81,10 +81,10 @@ def findSignal(mag, phase, freq, startFreq, bandwidth):
 
     i = range(0, len(signalPow), 1)
     plt.plot(i, signalPow)
-    ml = MultipleLocator(1)
-    Ml = MultipleLocator(10)
-    plt.axes().xaxis.set_minor_locator(ml)
-    plt.axes().xaxis.set_major_locator(Ml)
+    #ml = MultipleLocator(1)
+    #Ml = MultipleLocator(10)
+    #plt.axes().xaxis.set_minor_locator(ml)
+    #plt.axes().xaxis.set_major_locator(Ml)
     plt.grid(True, 'both')
     plt.show()
 

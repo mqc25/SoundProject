@@ -77,10 +77,12 @@ def decodeWavToMsg(waveFileName):
 # print(bitSequence)
 # print(DecodeMsg)
 # errorChecking(bitSequence,DecodeMsg)
-sendMsg = "Hi can you hear me. I just want to test to robustness of the signal. Probably very bad. Sigh...."
+
+sendMsg = "The King Island emu lived on King Island, in the Bass Strait between mainland Australia and Tasmania. This extinct subspecies, the smallest of all emus, may have exhibited insular dwarfism. It had darker plumage, black and brown, with naked blue skin on the neck, and its chicks were striped like those on the mainland. The behaviour of the King Island emu probably did not differ much from that of the mainland emu. They fed on berries, grass and seaweed. They ran swiftly, and could defend themselves by kicking."
 print(sendMsg)
 createWavFromMsg(sendMsg,'custom.wav')
-#decodeFile = input('Record File Name: ')
-decodeFile = 'parity2.wav'
-textMsg = decodeWavToMsg(decodeFile)
-print(textMsg)
+
+
+#decodeFile = 'long2.wav'
+#textMsg = decodeWavToMsg(decodeFile)
+#print(textMsg)
