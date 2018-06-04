@@ -77,9 +77,10 @@ def decodeWavToMsg(waveFileName):
 # print(bitSequence)
 # print(DecodeMsg)
 # errorChecking(bitSequence,DecodeMsg)
-sendMsg = "Hi we are the most awesome team. Just testing no issue here."
+sendMsg = "Hi can you hear me"
+print(sendMsg)
 createWavFromMsg(sendMsg,'custom.wav')
 #decodeFile = input('Record File Name: ')
-decodeFile = 'test58.wav'
+decodeFile = 'real22.wav'
 textMsg = decodeWavToMsg(decodeFile)
 print(textMsg)
