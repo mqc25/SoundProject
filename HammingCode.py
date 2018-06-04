@@ -15,8 +15,8 @@ c2 = [1] + p2
 c3 = [3] + p3
 c4 = [7] + p4
 
-c = [c1, c2, c3, c4]
-
+#c = [c1, c2, c3, c4]
+c = [c4,c3,c2,c1]
 
 def binaryToDec(bin):
     num = 0
@@ -56,8 +56,10 @@ def decodeHamingCode(num):
         errorCheck.append(temp)
 
     if errorCheck != [0, 0, 0, 0]:
+        print(errorCheck)
         index = binaryToDec(errorCheck)
-        seq[index - 1] = 1 - seq[index - 1]
+        if index < 13:
+            seq[index - 1] = 1 - seq[index - 1]
 
     msg = []
 

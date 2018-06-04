@@ -100,6 +100,7 @@ def findSignal(mag, phase, freq, startFreq, bandwidth):
 
     signalIndex[0] += 3
     signalIndex[1] -= 0
+    print(signalIndex[0],signalIndex[1])
     return mag[signalIndex[0]:signalIndex[1]], phase[signalIndex[0]:signalIndex[1]], freq
 
 
