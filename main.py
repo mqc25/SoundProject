@@ -1,7 +1,8 @@
 from Encoding import *
 from test import *
+from HammingCode import *
 
-freq_range = [3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000]
+freq_range = [3000,3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000]
 zero_freq = [3000]
 start_freq = [9500]
 
@@ -11,12 +12,12 @@ def createWavFile(waveFileName,bits):
 
 def decodeMsg(waveFileName):
     mag, phase, freq = doFFT(waveFileName, 0.04)
-    mag, phase, freq = findSignal(mag, phase, freq, 9000, 250)
+    mag, phase, freq = findSignal(mag, phase, freq, start_freq[0], 250)
     #freq_target = [3000]
     #freq_target += list(range(5000,9000,500))
     freq_target = freq_range
-    print(freq_target)
-    freq_list = list(range(3000, 9500, 250))
+    #print(freq_target)
+    freq_list = list(range(2500, 10500, 250))
     msg = doIntegral(mag, phase, freq, freq_list, 8, 250, freq_target)
     decodeMsg = []
     for singleMsg in msg:
@@ -24,7 +25,7 @@ def decodeMsg(waveFileName):
         for bit in singleMsg:
             num = (num << 1) | bit
         decodeMsg.append(num)
-    print(decodeMsg)
+    #print(decodeMsg)
     return decodeMsg
 
 def errorChecking(a,b):
@@ -51,10 +52,15 @@ def sequenceToText(seq):
 
 def createWavFromMsg(text,waveFileName):
     seq = textToSequence(text)
+    for i in range(len(seq)):
+        seq[i] = generateHammingCode(seq[i])
+    print(seq)
     createWavFile(waveFileName,seq)
 
 def decodeWavToMsg(waveFileName):
     estimateMsg = decodeMsg(waveFileName)
+    for i in range(len(estimateMsg)):
+        estimateMsg[i] = decodeHamingCode(estimateMsg[i])
     #print(estimateMsg)
     text = sequenceToText(estimateMsg)
     return text
@@ -74,7 +80,6 @@ def decodeWavToMsg(waveFileName):
 sendMsg = "Hi we are the most awesome team. Just testing no issue here."
 createWavFromMsg(sendMsg,'custom.wav')
 #decodeFile = input('Record File Name: ')
-decodeFile = 'test18.wav'
+decodeFile = 'custom.wav'
 textMsg = decodeWavToMsg(decodeFile)
-print(textToSequence(sendMsg))
 print(textMsg)

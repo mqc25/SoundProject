@@ -16,11 +16,11 @@ def readWaveFile(waveFileName):
     secs = N / float(fs_rate)
     Ts = 1.0 / fs_rate  # sampling interval in time
 
-    print("Frequency sampling", fs_rate)
-    print("Channels", l_audio)
-    print("Complete Samplings N", N)
-    print("secs", secs)
-    print("Timestep between samples Ts", Ts)
+    # print("Frequency sampling", fs_rate)
+    # print("Channels", l_audio)
+    # print("Complete Samplings N", N)
+    # print("secs", secs)
+    # print("Timestep between samples Ts", Ts)
 
     return fs_rate, signal, l_audio, N, secs, Ts
 
@@ -142,17 +142,18 @@ def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth,freq_target):
         for bit in msg:
             num = (num << 1) | bit
         print(msg, num)
-        plt.plot(freq_list, signalPow)
-        plt.show()
+        # plt.plot(freq_list, signalPow)
+        # plt.show()
         totalSignalPow.append(signalPow)
     #print(len(signalList))
     #print(index)
+    #print(allMsg)
     return allMsg
 
-
-mag, phase, freq = doFFT('custom.wav', 0.04)
-mag, phase, freq = findSignal(mag, phase, freq, 9500, 250)
-freq_target = list(range(3000,9500,500))
-print(freq_target)
-freq_list = list(range(2500, 10500, 250))
-doIntegral(mag, phase, freq, freq_list, 8, 250, freq_target)
+#
+# mag, phase, freq = doFFT('custom.wav', 0.04)
+# mag, phase, freq = findSignal(mag, phase, freq, 9500, 250)
+# freq_target = list(range(3000,9500,500))
+# #print(freq_target)
+# freq_list = list(range(2500, 10500, 250))
+# doIntegral(mag, phase, freq, freq_list, 8, 250, freq_target)
