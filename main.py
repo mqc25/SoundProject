@@ -9,7 +9,7 @@ zero_freq = [3000]
 start_freq = [10000]
 
 def createWavFile(waveFileName,bits):
-    waveFinal = generateFullSignal(bits, start_freq, 0.04, freq_range, zero_freq, 0.08, 250)
+    waveFinal = generateFullSignal(bits, start_freq, 0.04, freq_range, zero_freq, 0.16, 250)
     createWaveFormFile('custom.wav', waveFinal)
 
 def decodeMsg(waveFileName):
@@ -20,7 +20,7 @@ def decodeMsg(waveFileName):
     freq_target = freq_range
     #print(freq_target)
     freq_list = list(range(2500, 10500, 250))
-    msg = doIntegral(mag, phase, freq, freq_list, 4, 250, freq_target)
+    msg = doIntegral(mag, phase, freq, freq_list, 8, 250, freq_target)
     decodeMsg = []
     for singleMsg in msg:
         num = 0
@@ -86,7 +86,7 @@ print(sendMsg)
 createWavFromMsg(sendMsg,'custom.wav')
 
 
-# decodeFile = 'final.wav'
-# textMsg = decodeWavToMsg(decodeFile)
-# print(sendMsg)
-# print(textMsg)
+decodeFile = 'final5.wav'
+textMsg = decodeWavToMsg(decodeFile)
+print(sendMsg)
+print(textMsg)
