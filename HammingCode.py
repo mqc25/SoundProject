@@ -30,7 +30,7 @@ def generateHammingCode(num):
     #print(num)
     while len(seq) != 8:
         seq.insert(0, 0)
-    template = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    template = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     for i in range(8):
         template[dataPos[i]] = seq[i]
 
@@ -39,6 +39,11 @@ def generateHammingCode(num):
         for j in range(len(p[i])):
             temp ^= template[p[i][j]]
         template[parPos[i]] = temp
+
+    temp = 0
+    for i in range(len(template) -1):
+        temp ^= template[i]
+    template[-1] = temp
     #print(template)
     #print(binaryToDec(template))
     return binaryToDec(template)
@@ -46,7 +51,7 @@ def generateHammingCode(num):
 
 def decodeHamingCode(num):
     seq = bitfield(num)
-    while len(seq) != 12:
+    while len(seq) != 13:
         seq.insert(0, 0)
     errorCheck = []
     for i in range(4):
@@ -57,8 +62,12 @@ def decodeHamingCode(num):
 
     if errorCheck != [0, 0, 0, 0]:
         print(errorCheck)
+        if seq[12] == 0:
+            print("Double bit error")
+        else:
+            print("Single bit error")
         index = binaryToDec(errorCheck)
-        if index < 13:
+        if index < 12:
             seq[index - 1] = 1 - seq[index - 1]
 
     msg = []

@@ -2,9 +2,9 @@ from Encoding import *
 from test import *
 from HammingCode import *
 
-freq_range = [3000,3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000]
+freq_range = [3000,3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000, 9500]
 zero_freq = [3000]
-start_freq = [9500]
+start_freq = [10000]
 
 def createWavFile(waveFileName,bits):
     waveFinal = generateFullSignal(bits, start_freq, 0.04, freq_range, zero_freq, 0.16, 250)
@@ -77,10 +77,10 @@ def decodeWavToMsg(waveFileName):
 # print(bitSequence)
 # print(DecodeMsg)
 # errorChecking(bitSequence,DecodeMsg)
-sendMsg = "Hi can you hear me"
+sendMsg = "Hi can you hear me. I just want to test to robustness of the signal. Probably very bad. Sigh...."
 print(sendMsg)
 createWavFromMsg(sendMsg,'custom.wav')
 #decodeFile = input('Record File Name: ')
-decodeFile = 'real22.wav'
+decodeFile = 'parity2.wav'
 textMsg = decodeWavToMsg(decodeFile)
 print(textMsg)

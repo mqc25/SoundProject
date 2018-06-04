@@ -130,7 +130,7 @@ def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth,freq_target):
         maxPower = max(signalPow)
         threshold = maxPower/3
         if signalPow.index(maxPower) == codeIndex[0]:
-            msg = [0,0,0,0,0,0,0,0,0,0,0,0]
+            msg = [0,0,0,0,0,0,0,0,0,0,0,0,0]
         else:
             for i in range(1,len(codeIndex)):
                 if signalPow[codeIndex[i]] > threshold:
@@ -153,8 +153,8 @@ def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth,freq_target):
 
 #
 # mag, phase, freq = doFFT('custom.wav', 0.04)
-# mag, phase, freq = findSignal(mag, phase, freq, 9500, 250)
-# freq_target = list(range(3000,9500,500))
+# mag, phase, freq = findSignal(mag, phase, freq, 10000, 250)
+# freq_target = list(range(3000,10000,500))
 # #print(freq_target)
-# freq_list = list(range(2500, 10500, 250))
+# freq_list = list(range(2500, 11000, 250))
 # doIntegral(mag, phase, freq, freq_list, 8, 250, freq_target)
