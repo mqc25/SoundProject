@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10ba16c0-6c6b-4305-90ed-e8a318c3d26b" name="Default" comment="">
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HammingCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/HammingCode.py" afterDir="false" />
+>>>>>>> parent of 317aa85... Finalize
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +21,13 @@
       <file leaf-file-name="fft.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fft.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="221">
               <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+=======
+            <state relative-caret-position="1717">
+              <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
+>>>>>>> parent of 317aa85... Finalize
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -28,8 +38,13 @@
       <file leaf-file-name="Decoding.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Decoding.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-38">
               <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
+=======
+            <state relative-caret-position="527">
+              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+>>>>>>> parent of 317aa85... Finalize
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -40,8 +55,13 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="204">
               <caret line="155" column="39" selection-start-line="155" selection-start-column="39" selection-end-line="155" selection-end-column="39" />
+=======
+            <state relative-caret-position="309">
+              <caret line="160" selection-start-line="160" selection-end-line="160" />
+>>>>>>> parent of 317aa85... Finalize
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -52,8 +72,13 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="251">
               <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+=======
+            <state relative-caret-position="122">
+              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+>>>>>>> parent of 317aa85... Finalize
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -64,12 +89,17 @@
       <file leaf-file-name="Encoding.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Encoding.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-55">
               <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
                 <marker date="1528136488983" expanded="true" signature="136:267" ph="..." />
               </folding>
+=======
+            <state relative-caret-position="272">
+              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+>>>>>>> parent of 317aa85... Finalize
             </state>
           </provider>
         </entry>
@@ -89,10 +119,18 @@
       <file leaf-file-name="receive.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/receive.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="217">
               <caret line="153" selection-start-line="153" selection-end-line="159" selection-end-column="62" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
+=======
+            <state relative-caret-position="493">
+              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+                <marker date="1528077417604" expanded="true" signature="138:266" ph="..." />
+>>>>>>> parent of 317aa85... Finalize
               </folding>
             </state>
           </provider>
@@ -155,15 +193,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/generateSound.py" />
+        <option value="$PROJECT_DIR$/fft.py" />
         <option value="$PROJECT_DIR$/testSocket.py" />
         <option value="$PROJECT_DIR$/Server.py" />
         <option value="$PROJECT_DIR$/Client.py" />
         <option value="$PROJECT_DIR$/Decoding.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/HammingCode.py" />
         <option value="$PROJECT_DIR$/fft.py" />
         <option value="$PROJECT_DIR$/send.py" />
         <option value="$PROJECT_DIR$/receive.py" />
+=======
+>>>>>>> parent of 317aa85... Finalize
         <option value="$PROJECT_DIR$/Encoding.py" />
+        <option value="$PROJECT_DIR$/HammingCode.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
@@ -217,7 +260,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="Encoding" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Decoding" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SoundProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -229,13 +272,17 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Encoding.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Decoding.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="fft" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="Encoding" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> parent of 317aa85... Finalize
       <module name="SoundProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -247,13 +294,21 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fft.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Encoding.py" />
+>>>>>>> parent of 317aa85... Finalize
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="generateSound" type="PythonConfigurationType" factoryName="Python">
+=======
+    <configuration name="HammingCode" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> parent of 317aa85... Finalize
       <module name="SoundProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -265,7 +320,11 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generateSound.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HammingCode.py" />
+>>>>>>> parent of 317aa85... Finalize
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -329,17 +388,29 @@
       <item itemvalue="Python.generateSound" />
       <item itemvalue="Python.Encoding" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.Decoding" />
       <item itemvalue="Python.main" />
+<<<<<<< HEAD
       <item itemvalue="Python.receive" />
       <item itemvalue="Python.fft" />
+=======
+      <item itemvalue="Python.HammingCode" />
+>>>>>>> parent of 317aa85... Finalize
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+<<<<<<< HEAD
         <item itemvalue="Python.Encoding" />
         <item itemvalue="Python.fft" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.receive" />
+=======
+        <item itemvalue="Python.HammingCode" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.Encoding" />
+        <item itemvalue="Python.Decoding" />
+>>>>>>> parent of 317aa85... Finalize
       </list>
     </recent_temporary>
   </component>
@@ -412,7 +483,11 @@
           <caret line="6" column="45" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="35" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1528136488983" expanded="true" signature="136:267" ph="..." />
+=======
+            <marker date="1528077417604" expanded="true" signature="138:266" ph="..." />
+>>>>>>> parent of 317aa85... Finalize
           </folding>
         </state>
       </provider>
@@ -444,7 +519,11 @@
           <caret line="6" column="45" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="35" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1528136488983" expanded="true" signature="136:267" ph="..." />
+=======
+            <marker date="1528077417604" expanded="true" signature="138:266" ph="..." />
+>>>>>>> parent of 317aa85... Finalize
           </folding>
         </state>
       </provider>
@@ -532,7 +611,11 @@
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1528136488983" expanded="true" signature="136:267" ph="..." />
+=======
+            <marker date="1528077417604" expanded="true" signature="138:266" ph="..." />
+>>>>>>> parent of 317aa85... Finalize
           </folding>
         </state>
       </provider>
@@ -632,7 +715,11 @@
           <caret line="8" column="80" lean-forward="true" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
+<<<<<<< HEAD
             <marker date="1528136488983" expanded="true" signature="136:267" ph="..." />
+=======
+            <marker date="1528077417604" expanded="true" signature="138:266" ph="..." />
+>>>>>>> parent of 317aa85... Finalize
           </folding>
         </state>
       </provider>
@@ -704,6 +791,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client.py" />
     <entry file="file://$PROJECT_DIR$/Server.py" />
+<<<<<<< HEAD
     <entry file="file://C:/Anaconda3/Lib/site-packages/matplotlib/axes/_base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6222">
@@ -715,6 +803,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="71" selection-start-line="71" selection-end-line="71" />
+=======
+    <entry file="file://$PROJECT_DIR$/fft.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+>>>>>>> parent of 317aa85... Finalize
         </state>
       </provider>
     </entry>
@@ -738,27 +835,41 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/receive.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="153" selection-start-line="153" selection-end-line="159" selection-end-column="62" />
+=======
+    <entry file="file://$PROJECT_DIR$/Encoding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+>>>>>>> parent of 317aa85... Finalize
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
+            <marker date="1528077417604" expanded="true" signature="138:266" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fft.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="221">
           <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="272">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+>>>>>>> parent of 317aa85... Finalize
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Decoding.py">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-38">
           <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
@@ -772,6 +883,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-55">
           <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+>>>>>>> parent of 317aa85... Finalize
           <folding>
             <element signature="e#0#27#0" expanded="true" />
             <marker date="1528136488983" expanded="true" signature="136:267" ph="..." />
@@ -781,8 +897,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="204">
           <caret line="155" column="39" selection-start-line="155" selection-start-column="39" selection-end-line="155" selection-end-column="39" />
+=======
+        <state relative-caret-position="309">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
+>>>>>>> parent of 317aa85... Finalize
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -791,8 +912,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="251">
           <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+=======
+        <state relative-caret-position="122">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+>>>>>>> parent of 317aa85... Finalize
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>

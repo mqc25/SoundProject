@@ -79,6 +79,7 @@ def decodeWavToMsg(waveFileName):
 # print(bitSequence)
 # print(DecodeMsg)
 # errorChecking(bitSequence,DecodeMsg)
+<<<<<<< HEAD
 
 sendMsg = 'Test another Signal this time.'
 
@@ -87,6 +88,12 @@ sendMsg = 'Test another Signal this time.'
 
 #
 decodeFile = 'avg4.wav'
+=======
+sendMsg = "Hi we are the most awesome team. Just testing no issue here."
+createWavFromMsg(sendMsg,'custom.wav')
+#decodeFile = input('Record File Name: ')
+decodeFile = 'test35.wav'
+>>>>>>> parent of 317aa85... Finalize
 textMsg = decodeWavToMsg(decodeFile)
 print(sendMsg)
 print(textMsg)

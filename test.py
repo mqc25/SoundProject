@@ -128,7 +128,7 @@ def doIntegral(mag, phase, freq, freq_list, packageSize, bandwidth,freq_target):
             signalPow.append(sum(signalList[i][index[j][0]:index[j][1]]))
 
         maxPower = max(signalPow)
-        threshold = maxPower/3
+        threshold = maxPower/2.5
         if signalPow.index(maxPower) == codeIndex[0]:
             msg = [0,0,0,0,0,0,0,0,0,0,0,0,0]
         else:

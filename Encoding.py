@@ -3,9 +3,15 @@ import numpy as np
 #range of frequencies used for transmitting data
 
 #freq_range = [5000, 6000, 7000, 8000]
+<<<<<<< HEAD
 freq_range = [3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000, 9500]
 zero_freq = [3000]
 start_freq = [10000]
+=======
+# freq_range = [3500, 4000, 4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000]
+# zero_freq = [3000]
+# start_freq = [9500]
+>>>>>>> parent of 317aa85... Finalize
 
 #generate spaced 0 and 1's from a given binary sequence
 def bitfield(n):
@@ -38,7 +44,11 @@ def generateFullSignal(bits, startFreq, startDuration, freqRange, zeroFreq, dura
 
 # #bitSequence = [13, 11, 12, 3, 8, 10, 1, 9, 4, 5, 14, 7, 0, 6, 15, 2]
 #bitSequence = [13,56,178,378,2767,3437,1732,2605]
+<<<<<<< HEAD
 # bitSequence = [8191,3640, 1756, 2478, 3415, 3729, 3653, 1724, 3972, 2557, 2534,
+=======
+# bitSequence = [3640, 1756, 2478, 3415, 3729, 3653, 1724, 3972, 2557, 2534,
+>>>>>>> parent of 317aa85... Finalize
 #                4045, 531,  38,   1485, 2039, 2286, 1897, 1837, 2041, 3893]
 # waveFinal = generateFullSignal(bitSequence, start_freq, 0.04, freq_range, zero_freq, 0.16, 250)
 # createWaveFormFile('custom.wav', waveFinal)
